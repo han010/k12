@@ -1,0 +1,114 @@
+[0.000000] (-) TimerEvent: {}
+[0.001198] (camera_detect_pkg) JobQueued: {'identifier': 'camera_detect_pkg', 'dependencies': OrderedDict()}
+[0.002240] (camera_detect_pkg) JobStarted: {'identifier': 'camera_detect_pkg'}
+[0.098960] (-) TimerEvent: {}
+[0.199769] (-) TimerEvent: {}
+[0.300616] (-) TimerEvent: {}
+[0.401462] (-) TimerEvent: {}
+[0.502307] (-) TimerEvent: {}
+[0.603143] (-) TimerEvent: {}
+[0.703972] (-) TimerEvent: {}
+[0.804790] (-) TimerEvent: {}
+[0.905621] (-) TimerEvent: {}
+[1.006433] (-) TimerEvent: {}
+[1.107254] (-) TimerEvent: {}
+[1.208084] (-) TimerEvent: {}
+[1.308934] (-) TimerEvent: {}
+[1.409748] (-) TimerEvent: {}
+[1.510613] (-) TimerEvent: {}
+[1.611485] (-) TimerEvent: {}
+[1.712368] (-) TimerEvent: {}
+[1.813337] (-) TimerEvent: {}
+[1.914292] (-) TimerEvent: {}
+[2.015203] (-) TimerEvent: {}
+[2.116033] (-) TimerEvent: {}
+[2.216812] (-) TimerEvent: {}
+[2.317620] (-) TimerEvent: {}
+[2.418505] (-) TimerEvent: {}
+[2.519450] (-) TimerEvent: {}
+[2.620312] (-) TimerEvent: {}
+[2.721184] (-) TimerEvent: {}
+[2.822028] (-) TimerEvent: {}
+[2.923000] (-) TimerEvent: {}
+[3.024089] (-) TimerEvent: {}
+[3.125075] (-) TimerEvent: {}
+[3.225980] (-) TimerEvent: {}
+[3.326940] (-) TimerEvent: {}
+[3.427882] (-) TimerEvent: {}
+[3.528789] (-) TimerEvent: {}
+[3.629758] (-) TimerEvent: {}
+[3.730729] (-) TimerEvent: {}
+[3.831671] (-) TimerEvent: {}
+[3.932615] (-) TimerEvent: {}
+[4.033648] (-) TimerEvent: {}
+[4.134855] (-) TimerEvent: {}
+[4.235775] (-) TimerEvent: {}
+[4.336706] (-) TimerEvent: {}
+[4.437662] (-) TimerEvent: {}
+[4.538674] (-) TimerEvent: {}
+[4.639684] (-) TimerEvent: {}
+[4.643424] (camera_detect_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/opt/ros/ros2_ws/build/camera_detect_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/opt/ros/ros2_ws/build/camera_detect_pkg', 'env': {'LANGUAGE': 'en_US.UTF-8', 'USER': 'root', 'SSH_CLIENT': '192.168.1.100 49269 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:', 'BROWSER': '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/root', 'OLDPWD': '/opt/ros/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/0/vscode-ipc-5eb92a71-cdfa-460f-b2cd-f22582c4dd6a.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': '', 'COLCON_PREFIX_PATH': '/opt/ros/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/0', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/0/vscode-git-40da3843dc.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/opt/ros/ros2_ws/build/camera_detect_pkg', 'SSH_CONNECTION': '192.168.1.100 49269 192.168.1.101 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/ros2_ws/build/camera_detect_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[4.739954] (-) TimerEvent: {}
+[4.841107] (-) TimerEvent: {}
+[4.941942] (-) TimerEvent: {}
+[5.042844] (-) TimerEvent: {}
+[5.143901] (-) TimerEvent: {}
+[5.244894] (-) TimerEvent: {}
+[5.345839] (-) TimerEvent: {}
+[5.446819] (-) TimerEvent: {}
+[5.547821] (-) TimerEvent: {}
+[5.648781] (-) TimerEvent: {}
+[5.749788] (-) TimerEvent: {}
+[5.850656] (-) TimerEvent: {}
+[5.951571] (-) TimerEvent: {}
+[6.052453] (-) TimerEvent: {}
+[6.153347] (-) TimerEvent: {}
+[6.254253] (-) TimerEvent: {}
+[6.355292] (-) TimerEvent: {}
+[6.456334] (-) TimerEvent: {}
+[6.557258] (-) TimerEvent: {}
+[6.658192] (-) TimerEvent: {}
+[6.759103] (-) TimerEvent: {}
+[6.803202] (camera_detect_pkg) StdoutLine: {'line': b'running develop\n'}
+[6.859374] (-) TimerEvent: {}
+[6.960443] (-) TimerEvent: {}
+[7.061507] (-) TimerEvent: {}
+[7.162480] (-) TimerEvent: {}
+[7.263509] (-) TimerEvent: {}
+[7.364529] (-) TimerEvent: {}
+[7.465491] (-) TimerEvent: {}
+[7.566420] (-) TimerEvent: {}
+[7.667288] (-) TimerEvent: {}
+[7.768152] (-) TimerEvent: {}
+[7.869027] (-) TimerEvent: {}
+[7.969925] (-) TimerEvent: {}
+[8.070873] (-) TimerEvent: {}
+[8.108348] (camera_detect_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[8.109828] (camera_detect_pkg) StdoutLine: {'line': b'creating camera_detect_pkg.egg-info\n'}
+[8.110413] (camera_detect_pkg) StdoutLine: {'line': b'writing camera_detect_pkg.egg-info/PKG-INFO\n'}
+[8.111144] (camera_detect_pkg) StdoutLine: {'line': b'writing dependency_links to camera_detect_pkg.egg-info/dependency_links.txt\n'}
+[8.111958] (camera_detect_pkg) StdoutLine: {'line': b'writing entry points to camera_detect_pkg.egg-info/entry_points.txt\n'}
+[8.112583] (camera_detect_pkg) StdoutLine: {'line': b'writing requirements to camera_detect_pkg.egg-info/requires.txt\n'}
+[8.113150] (camera_detect_pkg) StdoutLine: {'line': b'writing top-level names to camera_detect_pkg.egg-info/top_level.txt\n'}
+[8.114267] (camera_detect_pkg) StdoutLine: {'line': b"writing manifest file 'camera_detect_pkg.egg-info/SOURCES.txt'\n"}
+[8.123363] (camera_detect_pkg) StdoutLine: {'line': b"reading manifest file 'camera_detect_pkg.egg-info/SOURCES.txt'\n"}
+[8.127387] (camera_detect_pkg) StdoutLine: {'line': b"writing manifest file 'camera_detect_pkg.egg-info/SOURCES.txt'\n"}
+[8.135983] (camera_detect_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[8.137519] (camera_detect_pkg) StdoutLine: {'line': b'Creating /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera-detect-pkg.egg-link (link to .)\n'}
+[8.142593] (camera_detect_pkg) StdoutLine: {'line': b'Installing webcam_pub script to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/camera_detect_pkg\n'}
+[8.143449] (camera_detect_pkg) StdoutLine: {'line': b'Installing webcam_sub script to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/camera_detect_pkg\n'}
+[8.144732] (camera_detect_pkg) StdoutLine: {'line': b'\n'}
+[8.145396] (camera_detect_pkg) StdoutLine: {'line': b'Installed /opt/ros/ros2_ws/build/camera_detect_pkg\n'}
+[8.146040] (camera_detect_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[8.146599] (camera_detect_pkg) StdoutLine: {'line': b'creating /opt/ros/ros2_ws/install/camera_detect_pkg/share/ament_index\n'}
+[8.147154] (camera_detect_pkg) StdoutLine: {'line': b'creating /opt/ros/ros2_ws/install/camera_detect_pkg/share/ament_index/resource_index\n'}
+[8.147715] (camera_detect_pkg) StdoutLine: {'line': b'creating /opt/ros/ros2_ws/install/camera_detect_pkg/share/ament_index/resource_index/packages\n'}
+[8.148204] (camera_detect_pkg) StdoutLine: {'line': b'symbolically linking /opt/ros/ros2_ws/build/camera_detect_pkg/resource/camera_detect_pkg -> /opt/ros/ros2_ws/install/camera_detect_pkg/share/ament_index/resource_index/packages\n'}
+[8.148677] (camera_detect_pkg) StdoutLine: {'line': b'symbolically linking /opt/ros/ros2_ws/build/camera_detect_pkg/package.xml -> /opt/ros/ros2_ws/install/camera_detect_pkg/share/camera_detect_pkg\n'}
+[8.171006] (-) TimerEvent: {}
+[8.271915] (-) TimerEvent: {}
+[8.372870] (-) TimerEvent: {}
+[8.407313] (camera_detect_pkg) CommandEnded: {'returncode': 0}
+[8.473080] (-) TimerEvent: {}
+[8.481809] (camera_detect_pkg) JobEnded: {'identifier': 'camera_detect_pkg', 'rc': 0}
+[8.485483] (-) EventReactorShutdown: {}

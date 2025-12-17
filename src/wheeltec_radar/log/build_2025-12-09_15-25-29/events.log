@@ -1,0 +1,60 @@
+[0.000000] (-) TimerEvent: {}
+[0.001439] (wheeltec_radar) JobQueued: {'identifier': 'wheeltec_radar', 'dependencies': OrderedDict()}
+[0.002759] (wheeltec_radar) JobStarted: {'identifier': 'wheeltec_radar'}
+[0.038552] (wheeltec_radar) JobProgress: {'identifier': 'wheeltec_radar', 'progress': 'cmake'}
+[0.041187] (wheeltec_radar) Command: {'cmd': ['/usr/bin/cmake', '/opt/ros/ros2_ws/src/wheeltec_radar', '-DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar'], 'cwd': '/opt/ros/ros2_ws/src/wheeltec_radar/build/wheeltec_radar', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SSH_CLIENT', '192.168.1.100 53902 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-9c1bf95a-ebac-4700-960e-ad3b44f8ac13.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('PATH', '/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-cbcdfaeb37659981.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7208ce51427a28fbafb494754cb5a951/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-691f8f0a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/opt/ros/ros2_ws/src/wheeltec_radar/build/wheeltec_radar'), ('SSH_CONNECTION', '192.168.1.100 53902 192.168.1.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.098799] (-) TimerEvent: {}
+[0.199755] (-) TimerEvent: {}
+[0.301022] (-) TimerEvent: {}
+[0.401933] (-) TimerEvent: {}
+[0.462755] (wheeltec_radar) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.2.0\n'}
+[0.502160] (-) TimerEvent: {}
+[0.603060] (-) TimerEvent: {}
+[0.703959] (-) TimerEvent: {}
+[0.804914] (-) TimerEvent: {}
+[0.905804] (-) TimerEvent: {}
+[1.006707] (-) TimerEvent: {}
+[1.031305] (wheeltec_radar) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.2.0\n'}
+[1.076395] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.106910] (-) TimerEvent: {}
+[1.207813] (-) TimerEvent: {}
+[1.308760] (-) TimerEvent: {}
+[1.409663] (-) TimerEvent: {}
+[1.431634] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.478823] (wheeltec_radar) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.481095] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.484506] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.503680] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.509812] (-) TimerEvent: {}
+[1.610719] (-) TimerEvent: {}
+[1.711607] (-) TimerEvent: {}
+[1.812520] (-) TimerEvent: {}
+[1.901849] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.912735] (-) TimerEvent: {}
+[1.950637] (wheeltec_radar) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.951887] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.954424] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.997454] (wheeltec_radar) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:19 (find_package):\n'}
+[1.998522] (wheeltec_radar) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[1.999082] (wheeltec_radar) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[1.999568] (wheeltec_radar) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.000017] (wheeltec_radar) StderrLine: {'line': b'\n'}
+[2.000519] (wheeltec_radar) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.000972] (wheeltec_radar) StderrLine: {'line': b'  any of the following names:\n'}
+[2.001400] (wheeltec_radar) StderrLine: {'line': b'\n'}
+[2.001820] (wheeltec_radar) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.002248] (wheeltec_radar) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.002671] (wheeltec_radar) StderrLine: {'line': b'\n'}
+[2.003090] (wheeltec_radar) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.003509] (wheeltec_radar) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.003926] (wheeltec_radar) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.004346] (wheeltec_radar) StderrLine: {'line': b'  has been installed.\n'}
+[2.004763] (wheeltec_radar) StderrLine: {'line': b'\n'}
+[2.005177] (wheeltec_radar) StderrLine: {'line': b'\x1b[0m\n'}
+[2.005637] (wheeltec_radar) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.006089] (wheeltec_radar) StdoutLine: {'line': b'See also "/opt/ros/ros2_ws/src/wheeltec_radar/build/wheeltec_radar/CMakeFiles/CMakeOutput.log".\n'}
+[2.012907] (-) TimerEvent: {}
+[2.021264] (wheeltec_radar) CommandEnded: {'returncode': 1}
+[2.114345] (-) TimerEvent: {}
+[2.137991] (wheeltec_radar) JobEnded: {'identifier': 'wheeltec_radar', 'rc': 1}
+[2.150692] (-) EventReactorShutdown: {}

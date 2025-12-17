@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c49ae9c0049ce2ba118d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wheeltec_radar",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-408c2501cee195b8cd5b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheeltec_radar_net_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheeltec_radar_net_node-0a1779dab6f2d7dcbbcf.json",
+					"name" : "wheeltec_radar_net_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheeltec_radar_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheeltec_radar_node-c083369dd54f77e89f08.json",
+					"name" : "wheeltec_radar_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wheeltec_radar_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wheeltec_radar_uninstall-e2e9b9bf9f5d282531a7.json",
+					"name" : "wheeltec_radar_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/opt/ros/ros2_ws/build/wheeltec_radar",
+		"source" : "/opt/ros/ros2_ws/src/wheeltec_radar"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

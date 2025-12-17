@@ -1,0 +1,2 @@
+Invoking command in '/opt/ros/ros2_ws/src/wheeltec_radar/build/wheeltec_radar': /usr/bin/cmake /opt/ros/ros2_ws/src/wheeltec_radar -DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar
+Invoked command in '/opt/ros/ros2_ws/src/wheeltec_radar/build/wheeltec_radar' returned '1': /usr/bin/cmake /opt/ros/ros2_ws/src/wheeltec_radar -DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar

@@ -1,0 +1,12 @@
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:[m[K In member function ‘[01m[Kvoid turn_on_radar::Get_Data()[m[K’:
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:72:49:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K+[m[K’ inside ‘[01m[K<<[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+   72 |       float datavelocity_y = (Receive_Data[8]<<[01;35m[K2+(Receive_Data[9]>>6)[m[K)*0.25-128;
+      |                                                [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:[m[K In member function ‘[01m[Kbool turn_on_radar::WriteToIo(const uint8_t*, uint32_t, uint32_t*)[m[K’:
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:208:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktx_len[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  208 |                                   [01;35m[Kuint32_t *tx_len[m[K) {
+      |                                   [01;35m[K~~~~~~~~~~^~~~~~[m[K
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar.cpp:[m[K In member function ‘[01m[Kvoid turn_on_radar::Get_Data()[m[K’:
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar.cpp:74:49:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K+[m[K’ inside ‘[01m[K<<[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+   74 |       float datavelocity_y = (Receive_Data[8]<<[01;35m[K2+(Receive_Data[9]>>6)[m[K)*0.25-128;
+      |                                                [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K

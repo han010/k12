@@ -1,0 +1,29 @@
+[0.041s] Invoking command in '/opt/ros/ros2_ws/build/wheeltec_radar': AMENT_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/opt/ros/ros2_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /opt/ros/ros2_ws/build/wheeltec_radar -- -j8 -l8
+[0.236s] [35m[1mConsolidate compiler generated dependencies of target wheeltec_radar_net_node[0m
+[0.237s] [35m[1mConsolidate compiler generated dependencies of target wheeltec_radar_node[0m
+[0.389s] [ 75%] Built target wheeltec_radar_node
+[0.389s] [100%] Built target wheeltec_radar_net_node
+[0.438s] Invoked command in '/opt/ros/ros2_ws/build/wheeltec_radar' returned '0': AMENT_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/opt/ros/ros2_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /opt/ros/ros2_ws/build/wheeltec_radar -- -j8 -l8
+[0.447s] Invoking command in '/opt/ros/ros2_ws/build/wheeltec_radar': AMENT_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/opt/ros/ros2_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /opt/ros/ros2_ws/build/wheeltec_radar
+[0.480s] -- Install configuration: ""
+[0.481s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/lib/wheeltec_radar/wheeltec_radar_node
+[0.482s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/lib/wheeltec_radar/wheeltec_radar_net_node
+[0.483s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/launch
+[0.484s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/launch/wheeltec_radar_net.launch.py
+[0.485s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/launch/wheeltec_radar.launch.py
+[0.485s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/ament_index/resource_index/package_run_dependencies/wheeltec_radar
+[0.486s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/ament_index/resource_index/parent_prefix_path/wheeltec_radar
+[0.487s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/ament_prefix_path.sh
+[0.487s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/ament_prefix_path.dsv
+[0.488s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/path.sh
+[0.489s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/path.dsv
+[0.489s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.bash
+[0.490s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.sh
+[0.490s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.zsh
+[0.491s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.dsv
+[0.492s] -- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/package.dsv
+[0.492s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/ament_index/resource_index/packages/wheeltec_radar
+[0.493s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/cmake/wheeltec_radarConfig.cmake
+[0.494s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/cmake/wheeltec_radarConfig-version.cmake
+[0.498s] -- Up-to-date: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/package.xml
+[0.501s] Invoked command in '/opt/ros/ros2_ws/build/wheeltec_radar' returned '0': AMENT_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/opt/ros/ros2_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /opt/ros/ros2_ws/build/wheeltec_radar

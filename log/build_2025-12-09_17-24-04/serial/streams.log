@@ -1,0 +1,71 @@
+[0.070s] Invoking command in '/opt/ros/ros2_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /opt/ros/ros2_ws/src/serial_ros2 -DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/install/serial
+[0.370s] -- The C compiler identification is GNU 11.2.0
+[0.675s] -- The CXX compiler identification is GNU 11.2.0
+[0.707s] -- Detecting C compiler ABI info
+[1.054s] -- Detecting C compiler ABI info - done
+[1.101s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.103s] -- Detecting C compile features
+[1.105s] -- Detecting C compile features - done
+[1.120s] -- Detecting CXX compiler ABI info
+[1.523s] -- Detecting CXX compiler ABI info - done
+[1.572s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.573s] -- Detecting CXX compile features
+[1.576s] -- Detecting CXX compile features - done
+[1.585s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.591s] -- Found ament_cmake_core: 1.3.12 (/opt/ros/humble/share/ament_cmake_core/cmake)
+[2.480s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.895s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.935s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.291s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.925s] -- Configuring done
+[3.947s] -- Generating done
+[3.958s] -- Build files have been written to: /opt/ros/ros2_ws/build/serial
+[3.985s] Invoked command in '/opt/ros/ros2_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /opt/ros/ros2_ws/src/serial_ros2 -DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/install/serial
+[3.994s] Invoking command in '/opt/ros/ros2_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /opt/ros/ros2_ws/build/serial -- -j8 -l8
+[4.200s] [ 75%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[4.201s] [ 75%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[4.201s] [ 75%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[5.797s] [01m[K/opt/ros/ros2_ws/src/serial_ros2/src/impl/list_ports/list_ports_linux.cc:[m[K In function ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> > glob(const std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[5.797s] [01m[K/opt/ros/ros2_ws/src/serial_ros2/src/impl/list_ports/list_ports_linux.cc:66:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.798s]    66 |     for(int path_index = 0; [01;35m[Kpath_index < glob_results.gl_pathc[m[K; path_index++)
+[5.799s]       |                             [01;35m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.799s] [01m[K/opt/ros/ros2_ws/src/serial_ros2/src/impl/list_ports/list_ports_linux.cc:57:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kglob_retval[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[5.800s]    57 |     int [01;35m[Kglob_retval[m[K = glob(patterns[0].c_str(), 0, NULL, &glob_results);
+[5.801s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[5.815s] [01m[K/opt/ros/ros2_ws/src/serial_ros2/src/impl/list_ports/list_ports_linux.cc:[m[K In function ‘[01m[Kstd::string format(const char*, ...)[m[K’:
+[5.815s] [01m[K/opt/ros/ros2_ws/src/serial_ros2/src/impl/list_ports/list_ports_linux.cc:246:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.816s]   246 |         else if( [01;35m[Kreturn_value >= buffer_size_bytes[m[K )
+[5.817s]       |                  [01;35m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[6.860s] [100%] [32m[1mLinking CXX static library libserial.a[0m
+[7.030s] [100%] Built target serial
+[7.081s] Invoked command in '/opt/ros/ros2_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /opt/ros/ros2_ws/build/serial -- -j8 -l8
+[7.139s] Invoking command in '/opt/ros/ros2_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /opt/ros/ros2_ws/build/serial
+[7.174s] -- Install configuration: ""
+[7.176s] -- Installing: /opt/ros/ros2_ws/install/serial/lib/libserial.a
+[7.179s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/library_path.sh
+[7.180s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/library_path.dsv
+[7.181s] -- Installing: /opt/ros/ros2_ws/install/serial/include/serial
+[7.183s] -- Installing: /opt/ros/ros2_ws/install/serial/include/serial/serial.h
+[7.184s] -- Installing: /opt/ros/ros2_ws/install/serial/include/serial/v8stdint.h
+[7.185s] -- Installing: /opt/ros/ros2_ws/install/serial/include/serial/impl
+[7.188s] -- Installing: /opt/ros/ros2_ws/install/serial/include/serial/impl/win.h
+[7.193s] -- Installing: /opt/ros/ros2_ws/install/serial/include/serial/impl/unix.h
+[7.197s] -- Installing: /opt/ros/ros2_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[7.199s] -- Installing: /opt/ros/ros2_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[7.203s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[7.203s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[7.204s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/path.sh
+[7.210s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/path.dsv
+[7.211s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/local_setup.bash
+[7.213s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/local_setup.sh
+[7.217s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/local_setup.zsh
+[7.218s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/local_setup.dsv
+[7.219s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/package.dsv
+[7.223s] -- Installing: /opt/ros/ros2_ws/install/serial/share/ament_index/resource_index/packages/serial
+[7.223s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.225s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[7.225s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.226s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[7.228s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[7.232s] -- Installing: /opt/ros/ros2_ws/install/serial/share/serial/package.xml
+[7.236s] Invoked command in '/opt/ros/ros2_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /opt/ros/ros2_ws/build/serial

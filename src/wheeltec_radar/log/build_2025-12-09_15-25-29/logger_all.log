@@ -1,0 +1,79 @@
+[0.925s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.926s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffbad27160>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffbad26140>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffbad26140>>)
+[2.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.323s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/opt/ros/ros2_ws/src/wheeltec_radar'
+[2.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.324s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.326s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.428s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'wheeltec_radar'
+[2.429s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.429s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.430s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.430s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.430s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.648s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.657s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.667s] Level 5:colcon.colcon_core.verb:set package 'wheeltec_radar' build argument 'cmake_args' from command line to 'None'
+[2.667s] Level 5:colcon.colcon_core.verb:set package 'wheeltec_radar' build argument 'cmake_target' from command line to 'None'
+[2.668s] Level 5:colcon.colcon_core.verb:set package 'wheeltec_radar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.668s] Level 5:colcon.colcon_core.verb:set package 'wheeltec_radar' build argument 'cmake_clean_cache' from command line to 'False'
+[2.668s] Level 5:colcon.colcon_core.verb:set package 'wheeltec_radar' build argument 'cmake_clean_first' from command line to 'False'
+[2.668s] Level 5:colcon.colcon_core.verb:set package 'wheeltec_radar' build argument 'cmake_force_configure' from command line to 'False'
+[2.668s] Level 5:colcon.colcon_core.verb:set package 'wheeltec_radar' build argument 'ament_cmake_args' from command line to 'None'
+[2.669s] Level 5:colcon.colcon_core.verb:set package 'wheeltec_radar' build argument 'catkin_cmake_args' from command line to 'None'
+[2.669s] Level 5:colcon.colcon_core.verb:set package 'wheeltec_radar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.669s] DEBUG:colcon.colcon_core.verb:Building package 'wheeltec_radar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/opt/ros/ros2_ws/src/wheeltec_radar/build/wheeltec_radar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar', 'merge_install': False, 'path': '/opt/ros/ros2_ws/src/wheeltec_radar', 'symlink_install': False, 'test_result_base': None}
+[2.670s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.675s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.677s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/opt/ros/ros2_ws/src/wheeltec_radar' with build type 'ament_cmake'
+[2.678s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/opt/ros/ros2_ws/src/wheeltec_radar'
+[2.696s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.697s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.697s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/opt/ros/ros2_ws/src/wheeltec_radar/build/wheeltec_radar': /usr/bin/cmake /opt/ros/ros2_ws/src/wheeltec_radar -DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar
+[4.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/opt/ros/ros2_ws/src/wheeltec_radar/build/wheeltec_radar' returned '1': /usr/bin/cmake /opt/ros/ros2_ws/src/wheeltec_radar -DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar
+[4.746s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wheeltec_radar)
+[4.765s] Level 1:colcon.colcon_core.environment:checking '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar' for CMake module files
+[4.767s] Level 1:colcon.colcon_core.environment:checking '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar' for CMake config files
+[4.769s] Level 1:colcon.colcon_core.environment:checking '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar/bin'
+[4.770s] Level 1:colcon.colcon_core.environment:checking '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar/lib/pkgconfig/wheeltec_radar.pc'
+[4.780s] Level 1:colcon.colcon_core.environment:checking '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar/lib/python3.10/site-packages'
+[4.782s] Level 1:colcon.colcon_core.environment:checking '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar/bin'
+[4.784s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar/share/wheeltec_radar/package.ps1'
+[4.791s] INFO:colcon.colcon_core.shell:Creating package descriptor '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar/share/wheeltec_radar/package.dsv'
+[4.794s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar/share/wheeltec_radar/package.sh'
+[4.799s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar/share/wheeltec_radar/package.bash'
+[4.805s] INFO:colcon.colcon_core.shell:Creating package script '/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar/share/wheeltec_radar/package.zsh'
+[4.810s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/opt/ros/ros2_ws/src/wheeltec_radar/install/wheeltec_radar/share/colcon-core/packages/wheeltec_radar)
+[4.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.824s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.824s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[4.825s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.869s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.869s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.870s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.870s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[29.975s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NoReply: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+[29.976s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[29.978s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/ros/ros2_ws/src/wheeltec_radar/install/local_setup.ps1'
+[29.985s] INFO:colcon.colcon_core.shell:Creating prefix util module '/opt/ros/ros2_ws/src/wheeltec_radar/install/_local_setup_util_ps1.py'
+[30.010s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/ros/ros2_ws/src/wheeltec_radar/install/setup.ps1'
+[30.016s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/ros/ros2_ws/src/wheeltec_radar/install/local_setup.sh'
+[30.023s] INFO:colcon.colcon_core.shell:Creating prefix util module '/opt/ros/ros2_ws/src/wheeltec_radar/install/_local_setup_util_sh.py'
+[30.030s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/ros/ros2_ws/src/wheeltec_radar/install/setup.sh'
+[30.035s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/ros/ros2_ws/src/wheeltec_radar/install/local_setup.bash'
+[30.039s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/ros/ros2_ws/src/wheeltec_radar/install/setup.bash'
+[30.044s] INFO:colcon.colcon_core.shell:Creating prefix script '/opt/ros/ros2_ws/src/wheeltec_radar/install/local_setup.zsh'
+[30.048s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/opt/ros/ros2_ws/src/wheeltec_radar/install/setup.zsh'

@@ -1,0 +1,299 @@
+[0.000000] (-) TimerEvent: {}
+[0.001909] (camera_detect_pkg) JobQueued: {'identifier': 'camera_detect_pkg', 'dependencies': OrderedDict()}
+[0.002630] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.003579] (wheeltec_radar) JobQueued: {'identifier': 'wheeltec_radar', 'dependencies': OrderedDict([('serial', '/opt/ros/ros2_ws/install/serial')])}
+[0.003874] (serial) JobStarted: {'identifier': 'serial'}
+[0.030685] (camera_detect_pkg) JobStarted: {'identifier': 'camera_detect_pkg'}
+[0.067685] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.069939] (serial) Command: {'cmd': ['/usr/bin/cmake', '/opt/ros/ros2_ws/src/serial_ros2', '-DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/install/serial'], 'cwd': '/opt/ros/ros2_ws/build/serial', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SSH_CLIENT', '192.168.1.100 53902 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/opt/ros/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-9c1bf95a-ebac-4700-960e-ad3b44f8ac13.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-cbcdfaeb37659981.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7208ce51427a28fbafb494754cb5a951/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-691f8f0a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/opt/ros/ros2_ws/build/serial'), ('SSH_CONNECTION', '192.168.1.100 53902 192.168.1.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098719] (-) TimerEvent: {}
+[0.199589] (-) TimerEvent: {}
+[0.300490] (-) TimerEvent: {}
+[0.373071] (serial) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.2.0\n'}
+[0.400695] (-) TimerEvent: {}
+[0.501593] (-) TimerEvent: {}
+[0.602477] (-) TimerEvent: {}
+[0.678676] (serial) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.2.0\n'}
+[0.702651] (-) TimerEvent: {}
+[0.710660] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.802864] (-) TimerEvent: {}
+[0.903809] (-) TimerEvent: {}
+[1.004767] (-) TimerEvent: {}
+[1.057864] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.104912] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.105676] (-) TimerEvent: {}
+[1.106270] (serial) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.108140] (serial) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.123894] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.205905] (-) TimerEvent: {}
+[1.306771] (-) TimerEvent: {}
+[1.407652] (-) TimerEvent: {}
+[1.508630] (-) TimerEvent: {}
+[1.526828] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.575518] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.576739] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.579204] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.588405] (serial) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.594893] (serial) StdoutLine: {'line': b'-- Found ament_cmake_core: 1.3.12 (/opt/ros/humble/share/ament_cmake_core/cmake)\n'}
+[1.608775] (-) TimerEvent: {}
+[1.709601] (-) TimerEvent: {}
+[1.810455] (-) TimerEvent: {}
+[1.911361] (-) TimerEvent: {}
+[2.012332] (-) TimerEvent: {}
+[2.113235] (-) TimerEvent: {}
+[2.214190] (-) TimerEvent: {}
+[2.315072] (-) TimerEvent: {}
+[2.416026] (-) TimerEvent: {}
+[2.483305] (serial) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.516229] (-) TimerEvent: {}
+[2.617102] (-) TimerEvent: {}
+[2.717963] (-) TimerEvent: {}
+[2.818827] (-) TimerEvent: {}
+[2.898944] (serial) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.918961] (-) TimerEvent: {}
+[2.938634] (serial) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.019167] (-) TimerEvent: {}
+[3.119999] (-) TimerEvent: {}
+[3.220856] (-) TimerEvent: {}
+[3.294748] (serial) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.321057] (-) TimerEvent: {}
+[3.421970] (-) TimerEvent: {}
+[3.522900] (-) TimerEvent: {}
+[3.623820] (-) TimerEvent: {}
+[3.724812] (-) TimerEvent: {}
+[3.825746] (-) TimerEvent: {}
+[3.926701] (-) TimerEvent: {}
+[3.928261] (serial) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.950389] (serial) StdoutLine: {'line': b'-- Generating done\n'}
+[3.961768] (serial) StdoutLine: {'line': b'-- Build files have been written to: /opt/ros/ros2_ws/build/serial\n'}
+[3.988341] (serial) CommandEnded: {'returncode': 0}
+[3.991329] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[3.995162] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/opt/ros/ros2_ws/build/serial', '--', '-j8', '-l8'], 'cwd': '/opt/ros/ros2_ws/build/serial', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SSH_CLIENT', '192.168.1.100 53902 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/opt/ros/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-9c1bf95a-ebac-4700-960e-ad3b44f8ac13.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-cbcdfaeb37659981.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7208ce51427a28fbafb494754cb5a951/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-691f8f0a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/opt/ros/ros2_ws/build/serial'), ('SSH_CONNECTION', '192.168.1.100 53902 192.168.1.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.026907] (-) TimerEvent: {}
+[4.127788] (-) TimerEvent: {}
+[4.203439] (serial) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o\x1b[0m\n'}
+[4.204425] (serial) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o\x1b[0m\n'}
+[4.205113] (serial) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o\x1b[0m\n'}
+[4.228076] (-) TimerEvent: {}
+[4.329136] (-) TimerEvent: {}
+[4.430136] (-) TimerEvent: {}
+[4.531118] (-) TimerEvent: {}
+[4.632084] (-) TimerEvent: {}
+[4.635745] (camera_detect_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/camera_detect_pkg', 'build', '--build-base', '/opt/ros/ros2_ws/build/camera_detect_pkg/build', 'install', '--record', '/opt/ros/ros2_ws/build/camera_detect_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/opt/ros/ros2_ws/src/camera_detect_pkg', 'env': {'PYTHON_BASIC_REPL': '1', 'LANGUAGE': 'en_US.UTF-8', 'USER': 'root', 'SSH_CLIENT': '192.168.1.100 53902 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:', 'BROWSER': '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/root', 'OLDPWD': '/opt/ros/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.106.3', 'VSCODE_IPC_HOOK_CLI': '/run/user/0/vscode-ipc-9c1bf95a-ebac-4700-960e-ad3b44f8ac13.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': '', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/0', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-cbcdfaeb37659981.txt', 'LANG': 'en_US.UTF-8', 'PYTHONSTARTUP': '/root/.vscode-server/data/User/workspaceStorage/7208ce51427a28fbafb494754cb5a951/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/0/vscode-git-691f8f0a1b.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/opt/ros/ros2_ws/build/camera_detect_pkg', 'SSH_CONNECTION': '192.168.1.100 53902 192.168.1.101 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/ros2_ws/build/camera_detect_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[4.732310] (-) TimerEvent: {}
+[4.833331] (-) TimerEvent: {}
+[4.934316] (-) TimerEvent: {}
+[5.035294] (-) TimerEvent: {}
+[5.136341] (-) TimerEvent: {}
+[5.237321] (-) TimerEvent: {}
+[5.338244] (-) TimerEvent: {}
+[5.439178] (-) TimerEvent: {}
+[5.540142] (-) TimerEvent: {}
+[5.641061] (-) TimerEvent: {}
+[5.741962] (-) TimerEvent: {}
+[5.799041] (serial) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/serial_ros2/src/impl/list_ports/list_ports_linux.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::__cxx11::basic_string<char> > glob(const std::vector<std::__cxx11::basic_string<char> >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.800929] (serial) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/serial_ros2/src/impl/list_ports/list_ports_linux.cc:66:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.801704] (serial) StderrLine: {'line': b'   66 |     for(int path_index = 0; \x1b[01;35m\x1b[Kpath_index < glob_results.gl_pathc\x1b[m\x1b[K; path_index++)\n'}
+[5.802385] (serial) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.803051] (serial) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/serial_ros2/src/impl/list_ports/list_ports_linux.cc:57:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kglob_retval\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.803720] (serial) StderrLine: {'line': b'   57 |     int \x1b[01;35m\x1b[Kglob_retval\x1b[m\x1b[K = glob(patterns[0].c_str(), 0, NULL, &glob_results);\n'}
+[5.804459] (serial) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.817873] (serial) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/serial_ros2/src/impl/list_ports/list_ports_linux.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::string format(const char*, ...)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.818785] (serial) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/serial_ros2/src/impl/list_ports/list_ports_linux.cc:246:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.819544] (serial) StderrLine: {'line': b'  246 |         else if( \x1b[01;35m\x1b[Kreturn_value >= buffer_size_bytes\x1b[m\x1b[K )\n'}
+[5.820213] (serial) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.842198] (-) TimerEvent: {}
+[5.943168] (-) TimerEvent: {}
+[6.044481] (-) TimerEvent: {}
+[6.145520] (-) TimerEvent: {}
+[6.246504] (-) TimerEvent: {}
+[6.347430] (-) TimerEvent: {}
+[6.448364] (-) TimerEvent: {}
+[6.549315] (-) TimerEvent: {}
+[6.650246] (-) TimerEvent: {}
+[6.701014] (camera_detect_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[6.705306] (camera_detect_pkg) StdoutLine: {'line': b'writing ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/PKG-INFO\n'}
+[6.706598] (camera_detect_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/dependency_links.txt\n'}
+[6.707677] (camera_detect_pkg) StdoutLine: {'line': b'writing entry points to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/entry_points.txt\n'}
+[6.708568] (camera_detect_pkg) StdoutLine: {'line': b'writing requirements to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/requires.txt\n'}
+[6.709415] (camera_detect_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/top_level.txt\n'}
+[6.720630] (camera_detect_pkg) StdoutLine: {'line': b"reading manifest file '../../build/camera_detect_pkg/camera_detect_pkg.egg-info/SOURCES.txt'\n"}
+[6.726582] (camera_detect_pkg) StdoutLine: {'line': b"writing manifest file '../../build/camera_detect_pkg/camera_detect_pkg.egg-info/SOURCES.txt'\n"}
+[6.727475] (camera_detect_pkg) StdoutLine: {'line': b'running build\n'}
+[6.727997] (camera_detect_pkg) StdoutLine: {'line': b'running build_py\n'}
+[6.729232] (camera_detect_pkg) StdoutLine: {'line': b'running install\n'}
+[6.731003] (camera_detect_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[6.737353] (camera_detect_pkg) StdoutLine: {'line': b'running install_data\n'}
+[6.738192] (camera_detect_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.747581] (camera_detect_pkg) StdoutLine: {'line': b"removing '/opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[6.749116] (camera_detect_pkg) StdoutLine: {'line': b'Copying ../../build/camera_detect_pkg/camera_detect_pkg.egg-info to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg-0.0.0-py3.10.egg-info\n'}
+[6.750333] (-) TimerEvent: {}
+[6.754514] (camera_detect_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[6.850557] (-) TimerEvent: {}
+[6.863110] (serial) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX static library libserial.a\x1b[0m\n'}
+[6.866584] (camera_detect_pkg) StdoutLine: {'line': b'Installing webcam_pub script to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/camera_detect_pkg\n'}
+[6.867526] (camera_detect_pkg) StdoutLine: {'line': b'Installing webcam_sub script to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/camera_detect_pkg\n'}
+[6.869406] (camera_detect_pkg) StdoutLine: {'line': b"writing list of installed files to '/opt/ros/ros2_ws/build/camera_detect_pkg/install.log'\n"}
+[6.950785] (-) TimerEvent: {}
+[7.033753] (serial) StdoutLine: {'line': b'[100%] Built target serial\n'}
+[7.050963] (-) TimerEvent: {}
+[7.083286] (serial) CommandEnded: {'returncode': 0}
+[7.089018] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[7.139952] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/opt/ros/ros2_ws/build/serial'], 'cwd': '/opt/ros/ros2_ws/build/serial', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SSH_CLIENT', '192.168.1.100 53902 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/opt/ros/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-9c1bf95a-ebac-4700-960e-ad3b44f8ac13.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-cbcdfaeb37659981.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7208ce51427a28fbafb494754cb5a951/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-691f8f0a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/opt/ros/ros2_ws/build/serial'), ('SSH_CONNECTION', '192.168.1.100 53902 192.168.1.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[7.147515] (camera_detect_pkg) CommandEnded: {'returncode': 0}
+[7.151501] (-) TimerEvent: {}
+[7.177455] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.179355] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/lib/libserial.a\n'}
+[7.181526] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[7.183165] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[7.184152] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/include/serial\n'}
+[7.185676] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/include/serial/serial.h\n'}
+[7.187683] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/include/serial/v8stdint.h\n'}
+[7.188472] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/include/serial/impl\n'}
+[7.189158] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/include/serial/impl/win.h\n'}
+[7.193177] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/include/serial/impl/unix.h\n'}
+[7.200504] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[7.201688] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[7.203436] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[7.206925] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[7.207738] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/path.sh\n'}
+[7.208543] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/environment/path.dsv\n'}
+[7.214828] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/local_setup.bash\n'}
+[7.215610] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/local_setup.sh\n'}
+[7.220597] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/local_setup.zsh\n'}
+[7.221335] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/local_setup.dsv\n'}
+[7.221968] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/package.dsv\n'}
+[7.223369] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[7.226891] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.227608] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.228858] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.229541] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[7.231094] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[7.232251] (serial) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/serial/share/serial/package.xml\n'}
+[7.236422] (camera_detect_pkg) JobEnded: {'identifier': 'camera_detect_pkg', 'rc': 0}
+[7.239008] (serial) CommandEnded: {'returncode': 0}
+[7.251943] (-) TimerEvent: {}
+[7.310261] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[7.316332] (wheeltec_radar) JobStarted: {'identifier': 'wheeltec_radar'}
+[7.341370] (wheeltec_radar) JobProgress: {'identifier': 'wheeltec_radar', 'progress': 'cmake'}
+[7.343533] (wheeltec_radar) Command: {'cmd': ['/usr/bin/cmake', '/opt/ros/ros2_ws/src/wheeltec_radar', '-DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/install/wheeltec_radar'], 'cwd': '/opt/ros/ros2_ws/build/wheeltec_radar', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SSH_CLIENT', '192.168.1.100 53902 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/ros2_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/opt/ros/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-9c1bf95a-ebac-4700-960e-ad3b44f8ac13.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-cbcdfaeb37659981.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7208ce51427a28fbafb494754cb5a951/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-691f8f0a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/ros2_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/opt/ros/ros2_ws/build/wheeltec_radar'), ('SSH_CONNECTION', '192.168.1.100 53902 192.168.1.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/ros2_ws/install/serial:/opt/ros/humble')]), 'shell': False}
+[7.352079] (-) TimerEvent: {}
+[7.452835] (-) TimerEvent: {}
+[7.553833] (-) TimerEvent: {}
+[7.654907] (-) TimerEvent: {}
+[7.658468] (wheeltec_radar) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.2.0\n'}
+[7.755123] (-) TimerEvent: {}
+[7.856058] (-) TimerEvent: {}
+[7.956974] (-) TimerEvent: {}
+[7.958085] (wheeltec_radar) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.2.0\n'}
+[7.990088] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.057204] (-) TimerEvent: {}
+[8.158131] (-) TimerEvent: {}
+[8.259097] (-) TimerEvent: {}
+[8.352304] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[8.359342] (-) TimerEvent: {}
+[8.419083] (wheeltec_radar) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[8.420092] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[8.422114] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[8.438176] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[8.459478] (-) TimerEvent: {}
+[8.560309] (-) TimerEvent: {}
+[8.661242] (-) TimerEvent: {}
+[8.762198] (-) TimerEvent: {}
+[8.863182] (-) TimerEvent: {}
+[8.869887] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[8.940532] (wheeltec_radar) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[8.941668] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[8.944134] (wheeltec_radar) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[8.953452] (wheeltec_radar) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[8.963282] (-) TimerEvent: {}
+[9.063981] (-) TimerEvent: {}
+[9.164822] (-) TimerEvent: {}
+[9.265744] (-) TimerEvent: {}
+[9.366608] (-) TimerEvent: {}
+[9.467465] (-) TimerEvent: {}
+[9.568350] (-) TimerEvent: {}
+[9.669329] (-) TimerEvent: {}
+[9.771050] (-) TimerEvent: {}
+[9.833937] (wheeltec_radar) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[9.871354] (-) TimerEvent: {}
+[9.972528] (-) TimerEvent: {}
+[10.073291] (-) TimerEvent: {}
+[10.174161] (-) TimerEvent: {}
+[10.275040] (-) TimerEvent: {}
+[10.359155] (wheeltec_radar) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[10.375194] (-) TimerEvent: {}
+[10.476037] (-) TimerEvent: {}
+[10.564637] (wheeltec_radar) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[10.576141] (-) TimerEvent: {}
+[10.588659] (wheeltec_radar) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[10.630022] (wheeltec_radar) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[10.676377] (-) TimerEvent: {}
+[10.694887] (wheeltec_radar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.776584] (-) TimerEvent: {}
+[10.779711] (wheeltec_radar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.876804] (-) TimerEvent: {}
+[10.977673] (-) TimerEvent: {}
+[11.035872] (wheeltec_radar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[11.049775] (wheeltec_radar) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[11.077830] (-) TimerEvent: {}
+[11.178657] (-) TimerEvent: {}
+[11.279487] (-) TimerEvent: {}
+[11.380340] (-) TimerEvent: {}
+[11.481291] (-) TimerEvent: {}
+[11.490570] (wheeltec_radar) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[11.581472] (-) TimerEvent: {}
+[11.621811] (wheeltec_radar) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[11.681652] (-) TimerEvent: {}
+[11.782507] (-) TimerEvent: {}
+[11.804948] (wheeltec_radar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.851932] (wheeltec_radar) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[11.882719] (-) TimerEvent: {}
+[11.983597] (-) TimerEvent: {}
+[12.084538] (-) TimerEvent: {}
+[12.185495] (-) TimerEvent: {}
+[12.245173] (wheeltec_radar) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[12.246605] (wheeltec_radar) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[12.285667] (-) TimerEvent: {}
+[12.386526] (-) TimerEvent: {}
+[12.487429] (-) TimerEvent: {}
+[12.588311] (-) TimerEvent: {}
+[12.661457] (wheeltec_radar) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[12.672378] (wheeltec_radar) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[12.688522] (-) TimerEvent: {}
+[12.789684] (-) TimerEvent: {}
+[12.890613] (-) TimerEvent: {}
+[12.991537] (-) TimerEvent: {}
+[13.019511] (wheeltec_radar) StdoutLine: {'line': b'-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[13.026959] (wheeltec_radar) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[13.088039] (wheeltec_radar) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/opt/ros/ros2_ws/install/serial/share/serial/cmake)\n'}
+[13.091641] (-) TimerEvent: {}
+[13.103637] (wheeltec_radar) StdoutLine: {'line': b'-- Found radar_msgs: 0.2.1 (/opt/ros/humble/share/radar_msgs/cmake)\n'}
+[13.191883] (-) TimerEvent: {}
+[13.292822] (-) TimerEvent: {}
+[13.345813] (wheeltec_radar) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[13.392988] (-) TimerEvent: {}
+[13.493959] (-) TimerEvent: {}
+[13.495181] (wheeltec_radar) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:29 (find_package):\n'}
+[13.496099] (wheeltec_radar) StderrLine: {'line': b'  By not providing "Findpcl_ros.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[13.496702] (wheeltec_radar) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "pcl_ros", but\n'}
+[13.497250] (wheeltec_radar) StderrLine: {'line': b'  CMake did not find one.\n'}
+[13.497766] (wheeltec_radar) StderrLine: {'line': b'\n'}
+[13.498262] (wheeltec_radar) StderrLine: {'line': b'  Could not find a package configuration file provided by "pcl_ros" with any\n'}
+[13.498742] (wheeltec_radar) StderrLine: {'line': b'  of the following names:\n'}
+[13.499208] (wheeltec_radar) StderrLine: {'line': b'\n'}
+[13.499670] (wheeltec_radar) StderrLine: {'line': b'    pcl_rosConfig.cmake\n'}
+[13.500138] (wheeltec_radar) StderrLine: {'line': b'    pcl_ros-config.cmake\n'}
+[13.500599] (wheeltec_radar) StderrLine: {'line': b'\n'}
+[13.501062] (wheeltec_radar) StderrLine: {'line': b'  Add the installation prefix of "pcl_ros" to CMAKE_PREFIX_PATH or set\n'}
+[13.501527] (wheeltec_radar) StderrLine: {'line': b'  "pcl_ros_DIR" to a directory containing one of the above files.  If\n'}
+[13.501981] (wheeltec_radar) StderrLine: {'line': b'  "pcl_ros" provides a separate development package or SDK, be sure it has\n'}
+[13.502429] (wheeltec_radar) StderrLine: {'line': b'  been installed.\n'}
+[13.502866] (wheeltec_radar) StderrLine: {'line': b'\n'}
+[13.503304] (wheeltec_radar) StderrLine: {'line': b'\x1b[0m\n'}
+[13.503738] (wheeltec_radar) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[13.504269] (wheeltec_radar) StdoutLine: {'line': b'See also "/opt/ros/ros2_ws/build/wheeltec_radar/CMakeFiles/CMakeOutput.log".\n'}
+[13.550132] (wheeltec_radar) CommandEnded: {'returncode': 1}
+[13.594146] (-) TimerEvent: {}
+[13.640509] (wheeltec_radar) JobEnded: {'identifier': 'wheeltec_radar', 'rc': 1}
+[13.654229] (-) EventReactorShutdown: {}

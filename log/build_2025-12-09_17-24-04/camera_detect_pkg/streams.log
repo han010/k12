@@ -1,0 +1,22 @@
+[4.611s] Invoking command in '/opt/ros/ros2_ws/src/camera_detect_pkg': PYTHONPATH=/opt/ros/ros2_ws/build/camera_detect_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_detect_pkg build --build-base /opt/ros/ros2_ws/build/camera_detect_pkg/build install --record /opt/ros/ros2_ws/build/camera_detect_pkg/install.log --single-version-externally-managed install_data
+[6.670s] running egg_info
+[6.674s] writing ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/PKG-INFO
+[6.676s] writing dependency_links to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/dependency_links.txt
+[6.677s] writing entry points to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/entry_points.txt
+[6.678s] writing requirements to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/requires.txt
+[6.678s] writing top-level names to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/top_level.txt
+[6.690s] reading manifest file '../../build/camera_detect_pkg/camera_detect_pkg.egg-info/SOURCES.txt'
+[6.696s] writing manifest file '../../build/camera_detect_pkg/camera_detect_pkg.egg-info/SOURCES.txt'
+[6.696s] running build
+[6.697s] running build_py
+[6.698s] running install
+[6.700s] running install_lib
+[6.706s] running install_data
+[6.707s] running install_egg_info
+[6.717s] removing '/opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[6.718s] Copying ../../build/camera_detect_pkg/camera_detect_pkg.egg-info to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg-0.0.0-py3.10.egg-info
+[6.724s] running install_scripts
+[6.836s] Installing webcam_pub script to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/camera_detect_pkg
+[6.836s] Installing webcam_sub script to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/camera_detect_pkg
+[6.838s] writing list of installed files to '/opt/ros/ros2_ws/build/camera_detect_pkg/install.log'
+[7.117s] Invoked command in '/opt/ros/ros2_ws/src/camera_detect_pkg' returned '0': PYTHONPATH=/opt/ros/ros2_ws/build/camera_detect_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/camera_detect_pkg build --build-base /opt/ros/ros2_ws/build/camera_detect_pkg/build install --record /opt/ros/ros2_ws/build/camera_detect_pkg/install.log --single-version-externally-managed install_data

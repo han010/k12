@@ -1,0 +1,10 @@
+[3.993s] Invoking command in '/opt/ros/ros2_ws/build/camera_detect_pkg': PYTHONPATH=/opt/ros/ros2_ws/build/camera_detect_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/ros/ros2_ws/build/camera_detect_pkg/build --no-deps symlink_data
+[5.018s] /usr/local/lib/python3.10/dist-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[5.018s]   warnings.warn(msg)
+[5.326s] usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+[5.326s]    or: setup.py --help [cmd1 cmd2 ...]
+[5.327s]    or: setup.py --help-commands
+[5.327s]    or: setup.py cmd --help
+[5.328s] 
+[5.328s] error: option --editable not recognized
+[5.515s] Invoked command in '/opt/ros/ros2_ws/build/camera_detect_pkg' returned '1': PYTHONPATH=/opt/ros/ros2_ws/build/camera_detect_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /opt/ros/ros2_ws/build/camera_detect_pkg/build --no-deps symlink_data

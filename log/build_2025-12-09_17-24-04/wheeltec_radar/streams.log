@@ -1,0 +1,56 @@
+[0.034s] Invoking command in '/opt/ros/ros2_ws/build/wheeltec_radar': AMENT_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/opt/ros/ros2_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /opt/ros/ros2_ws/src/wheeltec_radar -DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/install/wheeltec_radar
+[0.343s] -- The C compiler identification is GNU 11.2.0
+[0.642s] -- The CXX compiler identification is GNU 11.2.0
+[0.674s] -- Detecting C compiler ABI info
+[1.036s] -- Detecting C compiler ABI info - done
+[1.103s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.104s] -- Detecting C compile features
+[1.106s] -- Detecting C compile features - done
+[1.122s] -- Detecting CXX compiler ABI info
+[1.554s] -- Detecting CXX compiler ABI info - done
+[1.625s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.626s] -- Detecting CXX compile features
+[1.628s] -- Detecting CXX compile features - done
+[1.638s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.519s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.043s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[3.249s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.273s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.314s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.379s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.464s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.720s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.734s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.175s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.306s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.489s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.536s] -- Looking for pthread.h
+[4.929s] -- Looking for pthread.h - found
+[4.931s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.346s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.358s] -- Found Threads: TRUE  
+[5.704s] -- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+[5.711s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[5.772s] -- Found serial: 1.2.1 (/opt/ros/ros2_ws/install/serial/share/serial/cmake)
+[5.788s] -- Found radar_msgs: 0.2.1 (/opt/ros/humble/share/radar_msgs/cmake)
+[6.030s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[6.179s] [31mCMake Error at CMakeLists.txt:29 (find_package):
+[6.180s]   By not providing "Findpcl_ros.cmake" in CMAKE_MODULE_PATH this project has
+[6.181s]   asked CMake to find a package configuration file provided by "pcl_ros", but
+[6.181s]   CMake did not find one.
+[6.182s] 
+[6.182s]   Could not find a package configuration file provided by "pcl_ros" with any
+[6.183s]   of the following names:
+[6.183s] 
+[6.184s]     pcl_rosConfig.cmake
+[6.184s]     pcl_ros-config.cmake
+[6.185s] 
+[6.185s]   Add the installation prefix of "pcl_ros" to CMAKE_PREFIX_PATH or set
+[6.185s]   "pcl_ros_DIR" to a directory containing one of the above files.  If
+[6.186s]   "pcl_ros" provides a separate development package or SDK, be sure it has
+[6.186s]   been installed.
+[6.187s] 
+[6.187s] [0m
+[6.188s] -- Configuring incomplete, errors occurred!
+[6.188s] See also "/opt/ros/ros2_ws/build/wheeltec_radar/CMakeFiles/CMakeOutput.log".
+[6.235s] Invoked command in '/opt/ros/ros2_ws/build/wheeltec_radar' returned '1': AMENT_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/ros2_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/opt/ros/ros2_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /opt/ros/ros2_ws/src/wheeltec_radar -DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/install/wheeltec_radar

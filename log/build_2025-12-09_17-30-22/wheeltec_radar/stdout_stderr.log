@@ -1,0 +1,120 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)
+-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+-- Found serial: 1.2.1 (/opt/ros/ros2_ws/install/serial/share/serial/cmake)
+-- Found radar_msgs: 0.2.1 (/opt/ros/humble/share/radar_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.4.0
+-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- Checking for module 'flann'
+--   Found flann, version 1.9.1
+-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.25
+-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+-- Found PCL_2D: /usr/include/pcl-1.12  
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+-- Found PCL_MODELER: /usr/include/pcl-1.12  
+-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /opt/ros/ros2_ws/src/wheeltec_radar/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/ros/ros2_ws/build/wheeltec_radar
+[ 50%] [32mBuilding CXX object CMakeFiles/wheeltec_radar_net_node.dir/src/wheeltec_radar_net.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/wheeltec_radar_node.dir/src/wheeltec_radar.cpp.o[0m
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:[m[K In member function ‘[01m[Kvoid turn_on_radar::Get_Data()[m[K’:
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:72:49:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K+[m[K’ inside ‘[01m[K<<[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+   72 |       float datavelocity_y = (Receive_Data[8]<<[01;35m[K2+(Receive_Data[9]>>6)[m[K)*0.25-128;
+      |                                                [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:[m[K In member function ‘[01m[Kbool turn_on_radar::WriteToIo(const uint8_t*, uint32_t, uint32_t*)[m[K’:
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:208:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktx_len[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  208 |                                   [01;35m[Kuint32_t *tx_len[m[K) {
+      |                                   [01;35m[K~~~~~~~~~~^~~~~~[m[K
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar.cpp:[m[K In member function ‘[01m[Kvoid turn_on_radar::Get_Data()[m[K’:
+[01m[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar.cpp:74:49:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K+[m[K’ inside ‘[01m[K<<[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+   74 |       float datavelocity_y = (Receive_Data[8]<<[01;35m[K2+(Receive_Data[9]>>6)[m[K)*0.25-128;
+      |                                                [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable wheeltec_radar_node[0m
+[100%] [32m[1mLinking CXX executable wheeltec_radar_net_node[0m
+[100%] Built target wheeltec_radar_net_node
+[100%] Built target wheeltec_radar_node
+-- Install configuration: ""
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/lib/wheeltec_radar/wheeltec_radar_node
+-- Set runtime path of "/opt/ros/ros2_ws/install/wheeltec_radar/lib/wheeltec_radar/wheeltec_radar_node" to ""
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/lib/wheeltec_radar/wheeltec_radar_net_node
+-- Set runtime path of "/opt/ros/ros2_ws/install/wheeltec_radar/lib/wheeltec_radar/wheeltec_radar_net_node" to ""
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/launch
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/launch/wheeltec_radar_net.launch.py
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/launch/wheeltec_radar.launch.py
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/ament_index/resource_index/package_run_dependencies/wheeltec_radar
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/ament_index/resource_index/parent_prefix_path/wheeltec_radar
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/ament_prefix_path.sh
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/ament_prefix_path.dsv
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/path.sh
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/path.dsv
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.bash
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.sh
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.zsh
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.dsv
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/package.dsv
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/ament_index/resource_index/packages/wheeltec_radar
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/cmake/wheeltec_radarConfig.cmake
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/cmake/wheeltec_radarConfig-version.cmake
+-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/package.xml

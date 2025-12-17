@@ -1,0 +1,36 @@
+running develop
+Removing /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera-detect-pkg.egg-link (link to .)
+running egg_info
+writing ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/requires.txt
+writing top-level names to ../../build/camera_detect_pkg/camera_detect_pkg.egg-info/top_level.txt
+reading manifest file '../../build/camera_detect_pkg/camera_detect_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/camera_detect_pkg/camera_detect_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /opt/ros/ros2_ws/build/camera_detect_pkg/build
+creating /opt/ros/ros2_ws/build/camera_detect_pkg/build/lib
+creating /opt/ros/ros2_ws/build/camera_detect_pkg/build/lib/camera_detect_pkg
+copying camera_detect_pkg/webcam_pub.py -> /opt/ros/ros2_ws/build/camera_detect_pkg/build/lib/camera_detect_pkg
+copying camera_detect_pkg/webcam_sub.py -> /opt/ros/ros2_ws/build/camera_detect_pkg/build/lib/camera_detect_pkg
+copying camera_detect_pkg/__init__.py -> /opt/ros/ros2_ws/build/camera_detect_pkg/build/lib/camera_detect_pkg
+running install
+running install_lib
+creating /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg
+copying /opt/ros/ros2_ws/build/camera_detect_pkg/build/lib/camera_detect_pkg/webcam_pub.py -> /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg
+copying /opt/ros/ros2_ws/build/camera_detect_pkg/build/lib/camera_detect_pkg/webcam_sub.py -> /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg
+copying /opt/ros/ros2_ws/build/camera_detect_pkg/build/lib/camera_detect_pkg/__init__.py -> /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg
+byte-compiling /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg/webcam_pub.py to webcam_pub.cpython-310.pyc
+byte-compiling /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg/webcam_sub.py to webcam_sub.cpython-310.pyc
+byte-compiling /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/camera_detect_pkg -> /opt/ros/ros2_ws/install/camera_detect_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /opt/ros/ros2_ws/install/camera_detect_pkg/share/camera_detect_pkg
+running install_egg_info
+Copying ../../build/camera_detect_pkg/camera_detect_pkg.egg-info to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera_detect_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing webcam_pub script to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/camera_detect_pkg
+Installing webcam_sub script to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/camera_detect_pkg
+writing list of installed files to '/opt/ros/ros2_ws/build/camera_detect_pkg/install.log'

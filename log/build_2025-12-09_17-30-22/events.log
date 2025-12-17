@@ -1,0 +1,883 @@
+[0.000000] (-) TimerEvent: {}
+[0.002117] (-) JobUnselected: {'identifier': 'camera_detect_pkg'}
+[0.002826] (-) JobUnselected: {'identifier': 'serial'}
+[0.003804] (wheeltec_radar) JobQueued: {'identifier': 'wheeltec_radar', 'dependencies': OrderedDict([('serial', '/opt/ros/ros2_ws/install/serial')])}
+[0.004080] (wheeltec_radar) JobStarted: {'identifier': 'wheeltec_radar'}
+[0.044131] (wheeltec_radar) JobProgress: {'identifier': 'wheeltec_radar', 'progress': 'cmake'}
+[0.047632] (wheeltec_radar) Command: {'cmd': ['/usr/bin/cmake', '/opt/ros/ros2_ws/src/wheeltec_radar', '-DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/install/wheeltec_radar'], 'cwd': '/opt/ros/ros2_ws/build/wheeltec_radar', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SSH_CLIENT', '192.168.1.100 53902 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/ros2_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/opt/ros/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-9c1bf95a-ebac-4700-960e-ad3b44f8ac13.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-cbcdfaeb37659981.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7208ce51427a28fbafb494754cb5a951/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-691f8f0a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/ros2_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/opt/ros/ros2_ws/build/wheeltec_radar'), ('SSH_CONNECTION', '192.168.1.100 53902 192.168.1.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/ros2_ws/install/serial:/opt/ros/humble')]), 'shell': False}
+[0.099041] (-) TimerEvent: {}
+[0.111763] (wheeltec_radar) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199221] (-) TimerEvent: {}
+[0.300105] (-) TimerEvent: {}
+[0.401001] (-) TimerEvent: {}
+[0.501825] (-) TimerEvent: {}
+[0.602670] (-) TimerEvent: {}
+[0.703488] (-) TimerEvent: {}
+[0.804423] (-) TimerEvent: {}
+[0.850906] (wheeltec_radar) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.904659] (-) TimerEvent: {}
+[0.997066] (wheeltec_radar) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.004861] (-) TimerEvent: {}
+[1.012535] (wheeltec_radar) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.045070] (wheeltec_radar) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.102092] (wheeltec_radar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.104968] (-) TimerEvent: {}
+[1.175091] (wheeltec_radar) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.205188] (-) TimerEvent: {}
+[1.306101] (-) TimerEvent: {}
+[1.361204] (wheeltec_radar) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.368039] (wheeltec_radar) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.406302] (-) TimerEvent: {}
+[1.507254] (-) TimerEvent: {}
+[1.608178] (-) TimerEvent: {}
+[1.709107] (-) TimerEvent: {}
+[1.810061] (-) TimerEvent: {}
+[1.840316] (wheeltec_radar) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.910256] (-) TimerEvent: {}
+[2.011177] (-) TimerEvent: {}
+[2.112100] (-) TimerEvent: {}
+[2.123504] (wheeltec_radar) StdoutLine: {'line': b'-- Found rclpy: 3.3.17 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[2.125006] (wheeltec_radar) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[2.174850] (wheeltec_radar) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/opt/ros/ros2_ws/install/serial/share/serial/cmake)\n'}
+[2.185209] (wheeltec_radar) StdoutLine: {'line': b'-- Found radar_msgs: 0.2.1 (/opt/ros/humble/share/radar_msgs/cmake)\n'}
+[2.212286] (-) TimerEvent: {}
+[2.313157] (-) TimerEvent: {}
+[2.390156] (wheeltec_radar) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.413329] (-) TimerEvent: {}
+[2.495069] (wheeltec_radar) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[2.513473] (-) TimerEvent: {}
+[2.614284] (-) TimerEvent: {}
+[2.715155] (-) TimerEvent: {}
+[2.741041] (wheeltec_radar) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[2.799149] (wheeltec_radar) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[2.815361] (-) TimerEvent: {}
+[2.916387] (-) TimerEvent: {}
+[2.968675] (wheeltec_radar) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[2.970223] (wheeltec_radar) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.016575] (-) TimerEvent: {}
+[3.117625] (-) TimerEvent: {}
+[3.171243] (wheeltec_radar) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[3.217827] (-) TimerEvent: {}
+[3.227472] (wheeltec_radar) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[3.318100] (-) TimerEvent: {}
+[3.419399] (-) TimerEvent: {}
+[3.436927] (wheeltec_radar) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  \n'}
+[3.437916] (wheeltec_radar) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)\n'}
+[3.519606] (-) TimerEvent: {}
+[3.620577] (-) TimerEvent: {}
+[3.721499] (-) TimerEvent: {}
+[3.822387] (-) TimerEvent: {}
+[3.923312] (-) TimerEvent: {}
+[4.024283] (-) TimerEvent: {}
+[4.125310] (-) TimerEvent: {}
+[4.226272] (-) TimerEvent: {}
+[4.327362] (-) TimerEvent: {}
+[4.461774] (-) TimerEvent: {}
+[4.562857] (-) TimerEvent: {}
+[4.664688] (-) TimerEvent: {}
+[4.765607] (-) TimerEvent: {}
+[4.866741] (-) TimerEvent: {}
+[4.967729] (-) TimerEvent: {}
+[5.068714] (-) TimerEvent: {}
+[5.169654] (-) TimerEvent: {}
+[5.270644] (-) TimerEvent: {}
+[5.371633] (-) TimerEvent: {}
+[5.472562] (-) TimerEvent: {}
+[5.573532] (-) TimerEvent: {}
+[5.674740] (-) TimerEvent: {}
+[5.775627] (-) TimerEvent: {}
+[5.876486] (-) TimerEvent: {}
+[5.977385] (-) TimerEvent: {}
+[6.078301] (-) TimerEvent: {}
+[6.179199] (-) TimerEvent: {}
+[6.280144] (-) TimerEvent: {}
+[6.381096] (-) TimerEvent: {}
+[6.482006] (-) TimerEvent: {}
+[6.583054] (-) TimerEvent: {}
+[6.684255] (-) TimerEvent: {}
+[6.785186] (-) TimerEvent: {}
+[6.886084] (-) TimerEvent: {}
+[6.987106] (-) TimerEvent: {}
+[7.088312] (-) TimerEvent: {}
+[7.189286] (-) TimerEvent: {}
+[7.290533] (-) TimerEvent: {}
+[7.391432] (-) TimerEvent: {}
+[7.492415] (-) TimerEvent: {}
+[7.593429] (-) TimerEvent: {}
+[7.694639] (-) TimerEvent: {}
+[7.795666] (-) TimerEvent: {}
+[7.896931] (-) TimerEvent: {}
+[7.997911] (-) TimerEvent: {}
+[8.098802] (-) TimerEvent: {}
+[8.199810] (-) TimerEvent: {}
+[8.300828] (-) TimerEvent: {}
+[8.401764] (-) TimerEvent: {}
+[8.502699] (-) TimerEvent: {}
+[8.603626] (-) TimerEvent: {}
+[8.704643] (-) TimerEvent: {}
+[8.805924] (-) TimerEvent: {}
+[8.810516] (wheeltec_radar) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[8.878134] (wheeltec_radar) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[8.906122] (-) TimerEvent: {}
+[9.007172] (-) TimerEvent: {}
+[9.062346] (wheeltec_radar) StdoutLine: {'line': b'-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[9.069817] (wheeltec_radar) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[9.107375] (-) TimerEvent: {}
+[9.208297] (-) TimerEvent: {}
+[9.309165] (-) TimerEvent: {}
+[9.349995] (wheeltec_radar) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[9.409358] (-) TimerEvent: {}
+[9.510184] (-) TimerEvent: {}
+[9.611025] (-) TimerEvent: {}
+[9.711966] (-) TimerEvent: {}
+[9.812821] (-) TimerEvent: {}
+[9.913695] (-) TimerEvent: {}
+[10.014545] (-) TimerEvent: {}
+[10.115389] (-) TimerEvent: {}
+[10.184005] (wheeltec_radar) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[10.212760] (wheeltec_radar) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[10.215494] (-) TimerEvent: {}
+[10.240529] (wheeltec_radar) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[10.315736] (-) TimerEvent: {}
+[10.416664] (-) TimerEvent: {}
+[10.517562] (-) TimerEvent: {}
+[10.618856] (-) TimerEvent: {}
+[10.719787] (-) TimerEvent: {}
+[10.820738] (-) TimerEvent: {}
+[10.921704] (-) TimerEvent: {}
+[11.022627] (-) TimerEvent: {}
+[11.035122] (wheeltec_radar) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[11.122830] (-) TimerEvent: {}
+[11.223780] (-) TimerEvent: {}
+[11.324764] (-) TimerEvent: {}
+[11.425698] (-) TimerEvent: {}
+[11.526655] (-) TimerEvent: {}
+[11.627610] (-) TimerEvent: {}
+[11.728539] (-) TimerEvent: {}
+[11.829479] (-) TimerEvent: {}
+[11.844286] (wheeltec_radar) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[11.929674] (-) TimerEvent: {}
+[12.030527] (-) TimerEvent: {}
+[12.131413] (-) TimerEvent: {}
+[12.232287] (-) TimerEvent: {}
+[12.333144] (-) TimerEvent: {}
+[12.434014] (-) TimerEvent: {}
+[12.534864] (-) TimerEvent: {}
+[12.635004] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[12.635817] (-) TimerEvent: {}
+[12.640929] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[12.647031] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[12.653003] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[12.659310] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[12.665549] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[12.668313] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[12.670799] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[12.676695] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[12.683140] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[12.689608] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[12.695619] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[12.702512] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[12.709588] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[12.716173] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[12.722848] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[12.729369] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[12.735644] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[12.736390] (-) TimerEvent: {}
+[12.742784] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[12.749015] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[12.754173] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[12.756453] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[12.759987] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[12.765989] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[12.772899] (wheeltec_radar) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[12.836589] (-) TimerEvent: {}
+[12.937448] (-) TimerEvent: {}
+[12.948339] (wheeltec_radar) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[12.955605] (wheeltec_radar) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[12.956495] (wheeltec_radar) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[13.037638] (-) TimerEvent: {}
+[13.138458] (-) TimerEvent: {}
+[13.239291] (-) TimerEvent: {}
+[13.340127] (-) TimerEvent: {}
+[13.440987] (-) TimerEvent: {}
+[13.470389] (wheeltec_radar) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[13.521125] (wheeltec_radar) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[13.541163] (-) TimerEvent: {}
+[13.641962] (-) TimerEvent: {}
+[13.742730] (-) TimerEvent: {}
+[13.843545] (-) TimerEvent: {}
+[13.944497] (-) TimerEvent: {}
+[14.045656] (-) TimerEvent: {}
+[14.146517] (-) TimerEvent: {}
+[14.156213] (wheeltec_radar) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[14.180407] (wheeltec_radar) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[14.184656] (wheeltec_radar) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /opt/ros/ros2_ws/src/wheeltec_radar/include\n'}
+[14.185204] (wheeltec_radar) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[14.207347] (wheeltec_radar) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[14.208004] (wheeltec_radar) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[14.213014] (wheeltec_radar) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[14.221402] (wheeltec_radar) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[14.227243] (wheeltec_radar) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[14.246614] (-) TimerEvent: {}
+[14.251356] (wheeltec_radar) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[14.252075] (wheeltec_radar) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[14.257274] (wheeltec_radar) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[14.263167] (wheeltec_radar) StdoutLine: {'line': b'-- Configuring done\n'}
+[14.346834] (-) TimerEvent: {}
+[14.487661] (-) TimerEvent: {}
+[14.588491] (-) TimerEvent: {}
+[14.689419] (-) TimerEvent: {}
+[14.790401] (-) TimerEvent: {}
+[14.869906] (wheeltec_radar) StdoutLine: {'line': b'-- Generating done\n'}
+[14.890631] (-) TimerEvent: {}
+[14.983958] (wheeltec_radar) StdoutLine: {'line': b'-- Build files have been written to: /opt/ros/ros2_ws/build/wheeltec_radar\n'}
+[14.990724] (-) TimerEvent: {}
+[15.091456] (-) TimerEvent: {}
+[15.104000] (wheeltec_radar) CommandEnded: {'returncode': 0}
+[15.118880] (wheeltec_radar) JobProgress: {'identifier': 'wheeltec_radar', 'progress': 'build'}
+[15.138289] (wheeltec_radar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/opt/ros/ros2_ws/build/wheeltec_radar', '--', '-j8', '-l8'], 'cwd': '/opt/ros/ros2_ws/build/wheeltec_radar', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SSH_CLIENT', '192.168.1.100 53902 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/ros2_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/opt/ros/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-9c1bf95a-ebac-4700-960e-ad3b44f8ac13.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-cbcdfaeb37659981.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7208ce51427a28fbafb494754cb5a951/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-691f8f0a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/ros2_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/opt/ros/ros2_ws/build/wheeltec_radar'), ('SSH_CONNECTION', '192.168.1.100 53902 192.168.1.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/ros2_ws/install/serial:/opt/ros/humble')]), 'shell': False}
+[15.191654] (-) TimerEvent: {}
+[15.292527] (-) TimerEvent: {}
+[15.393415] (-) TimerEvent: {}
+[15.402794] (wheeltec_radar) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/wheeltec_radar_net_node.dir/src/wheeltec_radar_net.cpp.o\x1b[0m\n'}
+[15.403599] (wheeltec_radar) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/wheeltec_radar_node.dir/src/wheeltec_radar.cpp.o\x1b[0m\n'}
+[15.493611] (-) TimerEvent: {}
+[15.594482] (-) TimerEvent: {}
+[15.695382] (-) TimerEvent: {}
+[15.796281] (-) TimerEvent: {}
+[15.897210] (-) TimerEvent: {}
+[15.998085] (-) TimerEvent: {}
+[16.098968] (-) TimerEvent: {}
+[16.199836] (-) TimerEvent: {}
+[16.300728] (-) TimerEvent: {}
+[16.401589] (-) TimerEvent: {}
+[16.502460] (-) TimerEvent: {}
+[16.603338] (-) TimerEvent: {}
+[16.704201] (-) TimerEvent: {}
+[16.805067] (-) TimerEvent: {}
+[16.905935] (-) TimerEvent: {}
+[17.006845] (-) TimerEvent: {}
+[17.107707] (-) TimerEvent: {}
+[17.208586] (-) TimerEvent: {}
+[17.309459] (-) TimerEvent: {}
+[17.410352] (-) TimerEvent: {}
+[17.511255] (-) TimerEvent: {}
+[17.612125] (-) TimerEvent: {}
+[17.713008] (-) TimerEvent: {}
+[17.813891] (-) TimerEvent: {}
+[17.914792] (-) TimerEvent: {}
+[18.015673] (-) TimerEvent: {}
+[18.116623] (-) TimerEvent: {}
+[18.217522] (-) TimerEvent: {}
+[18.318423] (-) TimerEvent: {}
+[18.419364] (-) TimerEvent: {}
+[18.520358] (-) TimerEvent: {}
+[18.621241] (-) TimerEvent: {}
+[18.722147] (-) TimerEvent: {}
+[18.823011] (-) TimerEvent: {}
+[18.923890] (-) TimerEvent: {}
+[19.024756] (-) TimerEvent: {}
+[19.125604] (-) TimerEvent: {}
+[19.226536] (-) TimerEvent: {}
+[19.327428] (-) TimerEvent: {}
+[19.428334] (-) TimerEvent: {}
+[19.529243] (-) TimerEvent: {}
+[19.630146] (-) TimerEvent: {}
+[19.731068] (-) TimerEvent: {}
+[19.831991] (-) TimerEvent: {}
+[19.932913] (-) TimerEvent: {}
+[20.033805] (-) TimerEvent: {}
+[20.134714] (-) TimerEvent: {}
+[20.235647] (-) TimerEvent: {}
+[20.336573] (-) TimerEvent: {}
+[20.437467] (-) TimerEvent: {}
+[20.538385] (-) TimerEvent: {}
+[20.639307] (-) TimerEvent: {}
+[20.740238] (-) TimerEvent: {}
+[20.841157] (-) TimerEvent: {}
+[20.942080] (-) TimerEvent: {}
+[21.043015] (-) TimerEvent: {}
+[21.143970] (-) TimerEvent: {}
+[21.244961] (-) TimerEvent: {}
+[21.345881] (-) TimerEvent: {}
+[21.446880] (-) TimerEvent: {}
+[21.547784] (-) TimerEvent: {}
+[21.648694] (-) TimerEvent: {}
+[21.749609] (-) TimerEvent: {}
+[21.850548] (-) TimerEvent: {}
+[21.951461] (-) TimerEvent: {}
+[22.052376] (-) TimerEvent: {}
+[22.153300] (-) TimerEvent: {}
+[22.254222] (-) TimerEvent: {}
+[22.355149] (-) TimerEvent: {}
+[22.456070] (-) TimerEvent: {}
+[22.557035] (-) TimerEvent: {}
+[22.657950] (-) TimerEvent: {}
+[22.758861] (-) TimerEvent: {}
+[22.859776] (-) TimerEvent: {}
+[22.960674] (-) TimerEvent: {}
+[23.061569] (-) TimerEvent: {}
+[23.162457] (-) TimerEvent: {}
+[23.263349] (-) TimerEvent: {}
+[23.364234] (-) TimerEvent: {}
+[23.465106] (-) TimerEvent: {}
+[23.566018] (-) TimerEvent: {}
+[23.666987] (-) TimerEvent: {}
+[23.767886] (-) TimerEvent: {}
+[23.868798] (-) TimerEvent: {}
+[23.969700] (-) TimerEvent: {}
+[24.070616] (-) TimerEvent: {}
+[24.171524] (-) TimerEvent: {}
+[24.272389] (-) TimerEvent: {}
+[24.380152] (-) TimerEvent: {}
+[24.481049] (-) TimerEvent: {}
+[24.581995] (-) TimerEvent: {}
+[24.682891] (-) TimerEvent: {}
+[24.783782] (-) TimerEvent: {}
+[24.884712] (-) TimerEvent: {}
+[24.985639] (-) TimerEvent: {}
+[25.086563] (-) TimerEvent: {}
+[25.187487] (-) TimerEvent: {}
+[25.288434] (-) TimerEvent: {}
+[25.389358] (-) TimerEvent: {}
+[25.490295] (-) TimerEvent: {}
+[25.591280] (-) TimerEvent: {}
+[25.692282] (-) TimerEvent: {}
+[25.793371] (-) TimerEvent: {}
+[25.894378] (-) TimerEvent: {}
+[25.995379] (-) TimerEvent: {}
+[26.096371] (-) TimerEvent: {}
+[26.197287] (-) TimerEvent: {}
+[26.298193] (-) TimerEvent: {}
+[26.399107] (-) TimerEvent: {}
+[26.500019] (-) TimerEvent: {}
+[26.600882] (-) TimerEvent: {}
+[26.701755] (-) TimerEvent: {}
+[26.802657] (-) TimerEvent: {}
+[26.903577] (-) TimerEvent: {}
+[27.004467] (-) TimerEvent: {}
+[27.105402] (-) TimerEvent: {}
+[27.206337] (-) TimerEvent: {}
+[27.307322] (-) TimerEvent: {}
+[27.408275] (-) TimerEvent: {}
+[27.509184] (-) TimerEvent: {}
+[27.610152] (-) TimerEvent: {}
+[27.711048] (-) TimerEvent: {}
+[27.811961] (-) TimerEvent: {}
+[27.912946] (-) TimerEvent: {}
+[28.013901] (-) TimerEvent: {}
+[28.114906] (-) TimerEvent: {}
+[28.215935] (-) TimerEvent: {}
+[28.317030] (-) TimerEvent: {}
+[28.418054] (-) TimerEvent: {}
+[28.519049] (-) TimerEvent: {}
+[28.620066] (-) TimerEvent: {}
+[28.721035] (-) TimerEvent: {}
+[28.822019] (-) TimerEvent: {}
+[28.923037] (-) TimerEvent: {}
+[29.024027] (-) TimerEvent: {}
+[29.124985] (-) TimerEvent: {}
+[29.225950] (-) TimerEvent: {}
+[29.327037] (-) TimerEvent: {}
+[29.428031] (-) TimerEvent: {}
+[29.528935] (-) TimerEvent: {}
+[29.629858] (-) TimerEvent: {}
+[29.730747] (-) TimerEvent: {}
+[29.831651] (-) TimerEvent: {}
+[29.932599] (-) TimerEvent: {}
+[30.033569] (-) TimerEvent: {}
+[30.134483] (-) TimerEvent: {}
+[30.235463] (-) TimerEvent: {}
+[30.336439] (-) TimerEvent: {}
+[30.437319] (-) TimerEvent: {}
+[30.538211] (-) TimerEvent: {}
+[30.639216] (-) TimerEvent: {}
+[30.740108] (-) TimerEvent: {}
+[30.840997] (-) TimerEvent: {}
+[30.941923] (-) TimerEvent: {}
+[31.042890] (-) TimerEvent: {}
+[31.143822] (-) TimerEvent: {}
+[31.244740] (-) TimerEvent: {}
+[31.345656] (-) TimerEvent: {}
+[31.446606] (-) TimerEvent: {}
+[31.547506] (-) TimerEvent: {}
+[31.648383] (-) TimerEvent: {}
+[31.749279] (-) TimerEvent: {}
+[31.850179] (-) TimerEvent: {}
+[31.951127] (-) TimerEvent: {}
+[32.052064] (-) TimerEvent: {}
+[32.153020] (-) TimerEvent: {}
+[32.253974] (-) TimerEvent: {}
+[32.354910] (-) TimerEvent: {}
+[32.455832] (-) TimerEvent: {}
+[32.556795] (-) TimerEvent: {}
+[32.657720] (-) TimerEvent: {}
+[32.758696] (-) TimerEvent: {}
+[32.859699] (-) TimerEvent: {}
+[32.960718] (-) TimerEvent: {}
+[33.061727] (-) TimerEvent: {}
+[33.162739] (-) TimerEvent: {}
+[33.263792] (-) TimerEvent: {}
+[33.364777] (-) TimerEvent: {}
+[33.465791] (-) TimerEvent: {}
+[33.566843] (-) TimerEvent: {}
+[33.667848] (-) TimerEvent: {}
+[33.768874] (-) TimerEvent: {}
+[33.869885] (-) TimerEvent: {}
+[33.970886] (-) TimerEvent: {}
+[34.071879] (-) TimerEvent: {}
+[34.172882] (-) TimerEvent: {}
+[34.273886] (-) TimerEvent: {}
+[34.375699] (-) TimerEvent: {}
+[34.476763] (-) TimerEvent: {}
+[34.577760] (-) TimerEvent: {}
+[34.678782] (-) TimerEvent: {}
+[34.779802] (-) TimerEvent: {}
+[34.880828] (-) TimerEvent: {}
+[34.981870] (-) TimerEvent: {}
+[35.082865] (-) TimerEvent: {}
+[35.183875] (-) TimerEvent: {}
+[35.284885] (-) TimerEvent: {}
+[35.385914] (-) TimerEvent: {}
+[35.486947] (-) TimerEvent: {}
+[35.587914] (-) TimerEvent: {}
+[35.688884] (-) TimerEvent: {}
+[35.789853] (-) TimerEvent: {}
+[35.890809] (-) TimerEvent: {}
+[35.991798] (-) TimerEvent: {}
+[36.092810] (-) TimerEvent: {}
+[36.193684] (-) TimerEvent: {}
+[36.294574] (-) TimerEvent: {}
+[36.395506] (-) TimerEvent: {}
+[36.496406] (-) TimerEvent: {}
+[36.597276] (-) TimerEvent: {}
+[36.698193] (-) TimerEvent: {}
+[36.799092] (-) TimerEvent: {}
+[36.899995] (-) TimerEvent: {}
+[37.000894] (-) TimerEvent: {}
+[37.101770] (-) TimerEvent: {}
+[37.202702] (-) TimerEvent: {}
+[37.303644] (-) TimerEvent: {}
+[37.404591] (-) TimerEvent: {}
+[37.505523] (-) TimerEvent: {}
+[37.606520] (-) TimerEvent: {}
+[37.707447] (-) TimerEvent: {}
+[37.808374] (-) TimerEvent: {}
+[37.909271] (-) TimerEvent: {}
+[38.010188] (-) TimerEvent: {}
+[38.111121] (-) TimerEvent: {}
+[38.212036] (-) TimerEvent: {}
+[38.312970] (-) TimerEvent: {}
+[38.413899] (-) TimerEvent: {}
+[38.514816] (-) TimerEvent: {}
+[38.615728] (-) TimerEvent: {}
+[38.716650] (-) TimerEvent: {}
+[38.817558] (-) TimerEvent: {}
+[38.918448] (-) TimerEvent: {}
+[39.019358] (-) TimerEvent: {}
+[39.120318] (-) TimerEvent: {}
+[39.221224] (-) TimerEvent: {}
+[39.322135] (-) TimerEvent: {}
+[39.423076] (-) TimerEvent: {}
+[39.523993] (-) TimerEvent: {}
+[39.624911] (-) TimerEvent: {}
+[39.725805] (-) TimerEvent: {}
+[39.826766] (-) TimerEvent: {}
+[39.927740] (-) TimerEvent: {}
+[40.028718] (-) TimerEvent: {}
+[40.129665] (-) TimerEvent: {}
+[40.230568] (-) TimerEvent: {}
+[40.331452] (-) TimerEvent: {}
+[40.432346] (-) TimerEvent: {}
+[40.533233] (-) TimerEvent: {}
+[40.634090] (-) TimerEvent: {}
+[40.734936] (-) TimerEvent: {}
+[40.835774] (-) TimerEvent: {}
+[40.936667] (-) TimerEvent: {}
+[41.037561] (-) TimerEvent: {}
+[41.138494] (-) TimerEvent: {}
+[41.239425] (-) TimerEvent: {}
+[41.340362] (-) TimerEvent: {}
+[41.441287] (-) TimerEvent: {}
+[41.542238] (-) TimerEvent: {}
+[41.643177] (-) TimerEvent: {}
+[41.744081] (-) TimerEvent: {}
+[41.844959] (-) TimerEvent: {}
+[41.945836] (-) TimerEvent: {}
+[42.046772] (-) TimerEvent: {}
+[42.147681] (-) TimerEvent: {}
+[42.248586] (-) TimerEvent: {}
+[42.349533] (-) TimerEvent: {}
+[42.450493] (-) TimerEvent: {}
+[42.551405] (-) TimerEvent: {}
+[42.652345] (-) TimerEvent: {}
+[42.753268] (-) TimerEvent: {}
+[42.854176] (-) TimerEvent: {}
+[42.955110] (-) TimerEvent: {}
+[43.056030] (-) TimerEvent: {}
+[43.156984] (-) TimerEvent: {}
+[43.257889] (-) TimerEvent: {}
+[43.358828] (-) TimerEvent: {}
+[43.459768] (-) TimerEvent: {}
+[43.560684] (-) TimerEvent: {}
+[43.661595] (-) TimerEvent: {}
+[43.762502] (-) TimerEvent: {}
+[43.863402] (-) TimerEvent: {}
+[43.964307] (-) TimerEvent: {}
+[44.065234] (-) TimerEvent: {}
+[44.166119] (-) TimerEvent: {}
+[44.267023] (-) TimerEvent: {}
+[44.368169] (-) TimerEvent: {}
+[44.469114] (-) TimerEvent: {}
+[44.570041] (-) TimerEvent: {}
+[44.670944] (-) TimerEvent: {}
+[44.771817] (-) TimerEvent: {}
+[44.872743] (-) TimerEvent: {}
+[44.973786] (-) TimerEvent: {}
+[45.074726] (-) TimerEvent: {}
+[45.175682] (-) TimerEvent: {}
+[45.276651] (-) TimerEvent: {}
+[45.377585] (-) TimerEvent: {}
+[45.478532] (-) TimerEvent: {}
+[45.579465] (-) TimerEvent: {}
+[45.680414] (-) TimerEvent: {}
+[45.781356] (-) TimerEvent: {}
+[45.882285] (-) TimerEvent: {}
+[45.983236] (-) TimerEvent: {}
+[46.084328] (-) TimerEvent: {}
+[46.185272] (-) TimerEvent: {}
+[46.286214] (-) TimerEvent: {}
+[46.387197] (-) TimerEvent: {}
+[46.488132] (-) TimerEvent: {}
+[46.589075] (-) TimerEvent: {}
+[46.690012] (-) TimerEvent: {}
+[46.790951] (-) TimerEvent: {}
+[46.891899] (-) TimerEvent: {}
+[46.992862] (-) TimerEvent: {}
+[47.093802] (-) TimerEvent: {}
+[47.197120] (-) TimerEvent: {}
+[47.298102] (-) TimerEvent: {}
+[47.399034] (-) TimerEvent: {}
+[47.499926] (-) TimerEvent: {}
+[47.600821] (-) TimerEvent: {}
+[47.701731] (-) TimerEvent: {}
+[47.802665] (-) TimerEvent: {}
+[47.903605] (-) TimerEvent: {}
+[48.004544] (-) TimerEvent: {}
+[48.105471] (-) TimerEvent: {}
+[48.206530] (-) TimerEvent: {}
+[48.307441] (-) TimerEvent: {}
+[48.408357] (-) TimerEvent: {}
+[48.409281] (wheeltec_radar) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid turn_on_radar::Get_Data()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[48.410157] (wheeltec_radar) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:72:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around \xe2\x80\x98\x1b[01m\x1b[K+\x1b[m\x1b[K\xe2\x80\x99 inside \xe2\x80\x98\x1b[01m\x1b[K<<\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[48.410709] (wheeltec_radar) StderrLine: {'line': b'   72 |       float datavelocity_y = (Receive_Data[8]<<\x1b[01;35m\x1b[K2+(Receive_Data[9]>>6)\x1b[m\x1b[K)*0.25-128;\n'}
+[48.411192] (wheeltec_radar) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[48.428153] (wheeltec_radar) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool turn_on_radar::WriteToIo(const uint8_t*, uint32_t, uint32_t*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[48.429049] (wheeltec_radar) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar_net.cpp:208:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktx_len\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[48.429640] (wheeltec_radar) StderrLine: {'line': b'  208 |                                   \x1b[01;35m\x1b[Kuint32_t *tx_len\x1b[m\x1b[K) {\n'}
+[48.430160] (wheeltec_radar) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[48.460994] (wheeltec_radar) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid turn_on_radar::Get_Data()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[48.461818] (wheeltec_radar) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/ros2_ws/src/wheeltec_radar/src/wheeltec_radar.cpp:74:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Ksuggest parentheses around \xe2\x80\x98\x1b[01m\x1b[K+\x1b[m\x1b[K\xe2\x80\x99 inside \xe2\x80\x98\x1b[01m\x1b[K<<\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[48.462395] (wheeltec_radar) StderrLine: {'line': b'   74 |       float datavelocity_y = (Receive_Data[8]<<\x1b[01;35m\x1b[K2+(Receive_Data[9]>>6)\x1b[m\x1b[K)*0.25-128;\n'}
+[48.462918] (wheeltec_radar) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[48.508546] (-) TimerEvent: {}
+[48.609449] (-) TimerEvent: {}
+[48.710376] (-) TimerEvent: {}
+[48.811315] (-) TimerEvent: {}
+[48.912248] (-) TimerEvent: {}
+[49.013165] (-) TimerEvent: {}
+[49.114112] (-) TimerEvent: {}
+[49.215067] (-) TimerEvent: {}
+[49.316012] (-) TimerEvent: {}
+[49.417003] (-) TimerEvent: {}
+[49.517920] (-) TimerEvent: {}
+[49.618841] (-) TimerEvent: {}
+[49.719778] (-) TimerEvent: {}
+[49.820740] (-) TimerEvent: {}
+[49.921762] (-) TimerEvent: {}
+[50.022720] (-) TimerEvent: {}
+[50.123666] (-) TimerEvent: {}
+[50.224600] (-) TimerEvent: {}
+[50.325565] (-) TimerEvent: {}
+[50.426540] (-) TimerEvent: {}
+[50.527475] (-) TimerEvent: {}
+[50.628435] (-) TimerEvent: {}
+[50.729370] (-) TimerEvent: {}
+[50.830328] (-) TimerEvent: {}
+[50.931270] (-) TimerEvent: {}
+[51.032192] (-) TimerEvent: {}
+[51.133128] (-) TimerEvent: {}
+[51.234077] (-) TimerEvent: {}
+[51.335026] (-) TimerEvent: {}
+[51.435964] (-) TimerEvent: {}
+[51.536951] (-) TimerEvent: {}
+[51.637881] (-) TimerEvent: {}
+[51.738814] (-) TimerEvent: {}
+[51.839752] (-) TimerEvent: {}
+[51.940680] (-) TimerEvent: {}
+[52.041637] (-) TimerEvent: {}
+[52.142570] (-) TimerEvent: {}
+[52.243528] (-) TimerEvent: {}
+[52.344464] (-) TimerEvent: {}
+[52.445379] (-) TimerEvent: {}
+[52.546302] (-) TimerEvent: {}
+[52.647260] (-) TimerEvent: {}
+[52.748196] (-) TimerEvent: {}
+[52.849127] (-) TimerEvent: {}
+[52.950033] (-) TimerEvent: {}
+[53.050944] (-) TimerEvent: {}
+[53.151879] (-) TimerEvent: {}
+[53.252815] (-) TimerEvent: {}
+[53.353751] (-) TimerEvent: {}
+[53.454730] (-) TimerEvent: {}
+[53.555721] (-) TimerEvent: {}
+[53.656798] (-) TimerEvent: {}
+[53.757971] (-) TimerEvent: {}
+[53.858952] (-) TimerEvent: {}
+[53.959937] (-) TimerEvent: {}
+[54.060906] (-) TimerEvent: {}
+[54.161866] (-) TimerEvent: {}
+[54.262795] (-) TimerEvent: {}
+[54.363790] (-) TimerEvent: {}
+[54.464817] (-) TimerEvent: {}
+[54.565965] (-) TimerEvent: {}
+[54.666951] (-) TimerEvent: {}
+[54.767873] (-) TimerEvent: {}
+[54.868792] (-) TimerEvent: {}
+[54.969762] (-) TimerEvent: {}
+[55.070664] (-) TimerEvent: {}
+[55.171545] (-) TimerEvent: {}
+[55.272596] (-) TimerEvent: {}
+[55.373579] (-) TimerEvent: {}
+[55.474497] (-) TimerEvent: {}
+[55.575415] (-) TimerEvent: {}
+[55.676401] (-) TimerEvent: {}
+[55.777414] (-) TimerEvent: {}
+[55.878390] (-) TimerEvent: {}
+[55.979324] (-) TimerEvent: {}
+[56.080273] (-) TimerEvent: {}
+[56.181200] (-) TimerEvent: {}
+[56.282097] (-) TimerEvent: {}
+[56.383008] (-) TimerEvent: {}
+[56.483936] (-) TimerEvent: {}
+[56.584854] (-) TimerEvent: {}
+[56.685779] (-) TimerEvent: {}
+[56.786716] (-) TimerEvent: {}
+[56.887629] (-) TimerEvent: {}
+[56.988587] (-) TimerEvent: {}
+[57.089525] (-) TimerEvent: {}
+[57.190467] (-) TimerEvent: {}
+[57.291379] (-) TimerEvent: {}
+[57.392282] (-) TimerEvent: {}
+[57.493226] (-) TimerEvent: {}
+[57.594119] (-) TimerEvent: {}
+[57.695045] (-) TimerEvent: {}
+[57.795945] (-) TimerEvent: {}
+[57.896915] (-) TimerEvent: {}
+[57.997843] (-) TimerEvent: {}
+[58.098752] (-) TimerEvent: {}
+[58.199660] (-) TimerEvent: {}
+[58.300601] (-) TimerEvent: {}
+[58.401508] (-) TimerEvent: {}
+[58.502449] (-) TimerEvent: {}
+[58.603381] (-) TimerEvent: {}
+[58.704344] (-) TimerEvent: {}
+[58.805308] (-) TimerEvent: {}
+[58.906241] (-) TimerEvent: {}
+[59.007211] (-) TimerEvent: {}
+[59.108136] (-) TimerEvent: {}
+[59.209050] (-) TimerEvent: {}
+[59.309979] (-) TimerEvent: {}
+[59.410887] (-) TimerEvent: {}
+[59.511842] (-) TimerEvent: {}
+[59.612765] (-) TimerEvent: {}
+[59.713682] (-) TimerEvent: {}
+[59.814632] (-) TimerEvent: {}
+[59.915602] (-) TimerEvent: {}
+[60.016640] (-) TimerEvent: {}
+[60.117584] (-) TimerEvent: {}
+[60.218455] (-) TimerEvent: {}
+[60.319343] (-) TimerEvent: {}
+[60.420250] (-) TimerEvent: {}
+[60.521176] (-) TimerEvent: {}
+[60.622129] (-) TimerEvent: {}
+[60.723060] (-) TimerEvent: {}
+[60.823995] (-) TimerEvent: {}
+[60.924942] (-) TimerEvent: {}
+[61.025865] (-) TimerEvent: {}
+[61.127290] (-) TimerEvent: {}
+[61.228223] (-) TimerEvent: {}
+[61.329158] (-) TimerEvent: {}
+[61.430077] (-) TimerEvent: {}
+[61.531023] (-) TimerEvent: {}
+[61.631983] (-) TimerEvent: {}
+[61.732915] (-) TimerEvent: {}
+[61.833863] (-) TimerEvent: {}
+[61.934828] (-) TimerEvent: {}
+[62.035767] (-) TimerEvent: {}
+[62.136740] (-) TimerEvent: {}
+[62.237558] (-) TimerEvent: {}
+[62.338490] (-) TimerEvent: {}
+[62.439455] (-) TimerEvent: {}
+[62.540377] (-) TimerEvent: {}
+[62.641274] (-) TimerEvent: {}
+[62.742158] (-) TimerEvent: {}
+[62.843038] (-) TimerEvent: {}
+[62.943925] (-) TimerEvent: {}
+[63.044814] (-) TimerEvent: {}
+[63.145695] (-) TimerEvent: {}
+[63.246551] (-) TimerEvent: {}
+[63.347440] (-) TimerEvent: {}
+[63.448321] (-) TimerEvent: {}
+[63.549193] (-) TimerEvent: {}
+[63.650055] (-) TimerEvent: {}
+[63.750927] (-) TimerEvent: {}
+[63.851813] (-) TimerEvent: {}
+[63.952697] (-) TimerEvent: {}
+[64.053573] (-) TimerEvent: {}
+[64.154460] (-) TimerEvent: {}
+[64.255344] (-) TimerEvent: {}
+[64.356240] (-) TimerEvent: {}
+[64.457253] (-) TimerEvent: {}
+[64.558150] (-) TimerEvent: {}
+[64.659037] (-) TimerEvent: {}
+[64.759919] (-) TimerEvent: {}
+[64.860815] (-) TimerEvent: {}
+[64.961762] (-) TimerEvent: {}
+[65.062744] (-) TimerEvent: {}
+[65.163689] (-) TimerEvent: {}
+[65.264649] (-) TimerEvent: {}
+[65.365648] (-) TimerEvent: {}
+[65.466635] (-) TimerEvent: {}
+[65.567603] (-) TimerEvent: {}
+[65.668522] (-) TimerEvent: {}
+[65.769423] (-) TimerEvent: {}
+[65.870326] (-) TimerEvent: {}
+[65.971249] (-) TimerEvent: {}
+[66.072218] (-) TimerEvent: {}
+[66.173148] (-) TimerEvent: {}
+[66.274053] (-) TimerEvent: {}
+[66.374963] (-) TimerEvent: {}
+[66.475918] (-) TimerEvent: {}
+[66.576894] (-) TimerEvent: {}
+[66.677820] (-) TimerEvent: {}
+[66.778741] (-) TimerEvent: {}
+[66.879643] (-) TimerEvent: {}
+[66.980557] (-) TimerEvent: {}
+[67.081481] (-) TimerEvent: {}
+[67.182426] (-) TimerEvent: {}
+[67.283331] (-) TimerEvent: {}
+[67.384241] (-) TimerEvent: {}
+[67.485166] (-) TimerEvent: {}
+[67.586086] (-) TimerEvent: {}
+[67.687018] (-) TimerEvent: {}
+[67.787927] (-) TimerEvent: {}
+[67.888842] (-) TimerEvent: {}
+[67.989751] (-) TimerEvent: {}
+[68.090669] (-) TimerEvent: {}
+[68.191589] (-) TimerEvent: {}
+[68.292500] (-) TimerEvent: {}
+[68.393402] (-) TimerEvent: {}
+[68.494316] (-) TimerEvent: {}
+[68.595227] (-) TimerEvent: {}
+[68.696140] (-) TimerEvent: {}
+[68.797100] (-) TimerEvent: {}
+[68.898044] (-) TimerEvent: {}
+[68.998977] (-) TimerEvent: {}
+[69.099944] (-) TimerEvent: {}
+[69.200940] (-) TimerEvent: {}
+[69.301866] (-) TimerEvent: {}
+[69.402767] (-) TimerEvent: {}
+[69.439719] (wheeltec_radar) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable wheeltec_radar_node\x1b[0m\n'}
+[69.440615] (wheeltec_radar) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable wheeltec_radar_net_node\x1b[0m\n'}
+[69.502975] (-) TimerEvent: {}
+[69.603880] (-) TimerEvent: {}
+[69.705219] (-) TimerEvent: {}
+[69.806286] (-) TimerEvent: {}
+[69.907346] (-) TimerEvent: {}
+[70.008526] (-) TimerEvent: {}
+[70.109512] (-) TimerEvent: {}
+[70.210427] (-) TimerEvent: {}
+[70.311351] (-) TimerEvent: {}
+[70.412381] (-) TimerEvent: {}
+[70.513407] (-) TimerEvent: {}
+[70.614392] (-) TimerEvent: {}
+[70.715560] (-) TimerEvent: {}
+[70.816822] (-) TimerEvent: {}
+[70.917902] (-) TimerEvent: {}
+[71.018976] (-) TimerEvent: {}
+[71.120121] (-) TimerEvent: {}
+[71.221123] (-) TimerEvent: {}
+[71.322094] (-) TimerEvent: {}
+[71.422958] (-) TimerEvent: {}
+[71.524010] (-) TimerEvent: {}
+[71.624998] (-) TimerEvent: {}
+[71.726115] (-) TimerEvent: {}
+[71.827105] (-) TimerEvent: {}
+[71.928189] (-) TimerEvent: {}
+[72.029029] (-) TimerEvent: {}
+[72.129907] (-) TimerEvent: {}
+[72.230972] (-) TimerEvent: {}
+[72.332036] (-) TimerEvent: {}
+[72.433080] (-) TimerEvent: {}
+[72.534104] (-) TimerEvent: {}
+[72.635097] (-) TimerEvent: {}
+[72.736236] (-) TimerEvent: {}
+[72.837162] (-) TimerEvent: {}
+[72.938096] (-) TimerEvent: {}
+[73.038993] (-) TimerEvent: {}
+[73.139974] (-) TimerEvent: {}
+[73.240823] (-) TimerEvent: {}
+[73.341723] (-) TimerEvent: {}
+[73.442598] (-) TimerEvent: {}
+[73.543700] (-) TimerEvent: {}
+[73.644645] (-) TimerEvent: {}
+[73.745634] (-) TimerEvent: {}
+[73.846531] (-) TimerEvent: {}
+[73.947450] (-) TimerEvent: {}
+[74.048438] (-) TimerEvent: {}
+[74.149379] (-) TimerEvent: {}
+[74.250371] (-) TimerEvent: {}
+[74.351345] (-) TimerEvent: {}
+[74.452258] (-) TimerEvent: {}
+[74.553205] (-) TimerEvent: {}
+[74.654114] (-) TimerEvent: {}
+[74.755026] (-) TimerEvent: {}
+[74.855980] (-) TimerEvent: {}
+[74.956960] (-) TimerEvent: {}
+[75.058010] (-) TimerEvent: {}
+[75.159019] (-) TimerEvent: {}
+[75.164127] (wheeltec_radar) StdoutLine: {'line': b'[100%] Built target wheeltec_radar_net_node\n'}
+[75.188803] (wheeltec_radar) StdoutLine: {'line': b'[100%] Built target wheeltec_radar_node\n'}
+[75.255043] (wheeltec_radar) CommandEnded: {'returncode': 0}
+[75.259559] (-) TimerEvent: {}
+[75.262448] (wheeltec_radar) JobProgress: {'identifier': 'wheeltec_radar', 'progress': 'install'}
+[75.307676] (wheeltec_radar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/opt/ros/ros2_ws/build/wheeltec_radar'], 'cwd': '/opt/ros/ros2_ws/build/wheeltec_radar', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LANGUAGE', 'en_US.UTF-8'), ('USER', 'root'), ('SSH_CLIENT', '192.168.1.100 53902 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/ros2_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/opt/ros/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-9c1bf95a-ebac-4700-960e-ad3b44f8ac13.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/cli/servers/Stable-bf9252a2fb45be6893dd8870c0bf37e2e1766d61/server/bin/remote-cli:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.16.0/.noConfigDebugAdapterEndpoints/endpoint-cbcdfaeb37659981.txt'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7208ce51427a28fbafb494754cb5a951/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-691f8f0a1b.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/ros2_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/opt/ros/ros2_ws/build/wheeltec_radar'), ('SSH_CONNECTION', '192.168.1.100 53902 192.168.1.101 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/ros2_ws/install/serial:/opt/ros/humble')]), 'shell': False}
+[75.348648] (wheeltec_radar) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[75.349551] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/lib/wheeltec_radar/wheeltec_radar_node\n'}
+[75.359712] (-) TimerEvent: {}
+[75.362502] (wheeltec_radar) StdoutLine: {'line': b'-- Set runtime path of "/opt/ros/ros2_ws/install/wheeltec_radar/lib/wheeltec_radar/wheeltec_radar_node" to ""\n'}
+[75.363313] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/lib/wheeltec_radar/wheeltec_radar_net_node\n'}
+[75.372708] (wheeltec_radar) StdoutLine: {'line': b'-- Set runtime path of "/opt/ros/ros2_ws/install/wheeltec_radar/lib/wheeltec_radar/wheeltec_radar_net_node" to ""\n'}
+[75.373614] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/launch\n'}
+[75.374293] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/launch/wheeltec_radar_net.launch.py\n'}
+[75.374910] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/launch/wheeltec_radar.launch.py\n'}
+[75.375452] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/ament_index/resource_index/package_run_dependencies/wheeltec_radar\n'}
+[75.376030] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/ament_index/resource_index/parent_prefix_path/wheeltec_radar\n'}
+[75.376629] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/ament_prefix_path.sh\n'}
+[75.377434] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/ament_prefix_path.dsv\n'}
+[75.378029] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/path.sh\n'}
+[75.378611] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/environment/path.dsv\n'}
+[75.379193] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.bash\n'}
+[75.379766] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.sh\n'}
+[75.380337] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.zsh\n'}
+[75.380883] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/local_setup.dsv\n'}
+[75.381428] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/package.dsv\n'}
+[75.382058] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/ament_index/resource_index/packages/wheeltec_radar\n'}
+[75.382744] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/cmake/wheeltec_radarConfig.cmake\n'}
+[75.383279] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/cmake/wheeltec_radarConfig-version.cmake\n'}
+[75.383798] (wheeltec_radar) StdoutLine: {'line': b'-- Installing: /opt/ros/ros2_ws/install/wheeltec_radar/share/wheeltec_radar/package.xml\n'}
+[75.391594] (wheeltec_radar) CommandEnded: {'returncode': 0}
+[75.459883] (-) TimerEvent: {}
+[75.508624] (wheeltec_radar) JobEnded: {'identifier': 'wheeltec_radar', 'rc': 0}
+[75.511816] (-) EventReactorShutdown: {}

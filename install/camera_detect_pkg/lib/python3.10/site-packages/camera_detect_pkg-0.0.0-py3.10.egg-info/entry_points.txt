@@ -1,0 +1,4 @@
+[console_scripts]
+webcam_pub = camera_detect_pkg.webcam_pub:main
+webcam_sub = camera_detect_pkg.webcam_sub:main
+

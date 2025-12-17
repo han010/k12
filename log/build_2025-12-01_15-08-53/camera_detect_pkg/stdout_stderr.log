@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating camera_detect_pkg.egg-info
+writing camera_detect_pkg.egg-info/PKG-INFO
+writing dependency_links to camera_detect_pkg.egg-info/dependency_links.txt
+writing entry points to camera_detect_pkg.egg-info/entry_points.txt
+writing requirements to camera_detect_pkg.egg-info/requires.txt
+writing top-level names to camera_detect_pkg.egg-info/top_level.txt
+writing manifest file 'camera_detect_pkg.egg-info/SOURCES.txt'
+reading manifest file 'camera_detect_pkg.egg-info/SOURCES.txt'
+writing manifest file 'camera_detect_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /opt/ros/ros2_ws/install/camera_detect_pkg/lib/python3.10/site-packages/camera-detect-pkg.egg-link (link to .)
+Installing webcam_pub script to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/camera_detect_pkg
+Installing webcam_sub script to /opt/ros/ros2_ws/install/camera_detect_pkg/lib/camera_detect_pkg
+
+Installed /opt/ros/ros2_ws/build/camera_detect_pkg
+running symlink_data
+creating /opt/ros/ros2_ws/install/camera_detect_pkg/share/ament_index
+creating /opt/ros/ros2_ws/install/camera_detect_pkg/share/ament_index/resource_index
+creating /opt/ros/ros2_ws/install/camera_detect_pkg/share/ament_index/resource_index/packages
+symbolically linking /opt/ros/ros2_ws/build/camera_detect_pkg/resource/camera_detect_pkg -> /opt/ros/ros2_ws/install/camera_detect_pkg/share/ament_index/resource_index/packages
+symbolically linking /opt/ros/ros2_ws/build/camera_detect_pkg/package.xml -> /opt/ros/ros2_ws/install/camera_detect_pkg/share/camera_detect_pkg

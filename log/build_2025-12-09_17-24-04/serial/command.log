@@ -1,0 +1,6 @@
+Invoking command in '/opt/ros/ros2_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /opt/ros/ros2_ws/src/serial_ros2 -DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/install/serial
+Invoked command in '/opt/ros/ros2_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /opt/ros/ros2_ws/src/serial_ros2 -DCMAKE_INSTALL_PREFIX=/opt/ros/ros2_ws/install/serial
+Invoking command in '/opt/ros/ros2_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /opt/ros/ros2_ws/build/serial -- -j8 -l8
+Invoked command in '/opt/ros/ros2_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /opt/ros/ros2_ws/build/serial -- -j8 -l8
+Invoking command in '/opt/ros/ros2_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /opt/ros/ros2_ws/build/serial
+Invoked command in '/opt/ros/ros2_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /opt/ros/ros2_ws/build/serial
