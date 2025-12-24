@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="revo_ugv">
+  <!-- Basic geometry properties (meters) -->
+  <xacro:property name="chassis_length" value="2.0"/>
+  <xacro:property name="chassis_width" value="1.0"/>
+  <xacro:property name="chassis_height" value="0.3"/>
+  <xacro:property name="wheel_radius" value="0.2"/>
+  <xacro:property name="wheel_width" value="0.5"/> <!-- Given wheel width -->
+
+  <!-- Mass/inertia placeholders to keep robot_state_publisher happy -->
+  <xacro:macro name="default_inertial" params="mass ixx iyy izz ixy iyz ixz">
+    <inertial>
+      <mass value="${mass}"/>
+      <inertia ixx="${ixx}" ixy="${ixy}" ixz="${ixz}" iyy="${iyy}" iyz="${iyz}" izz="${izz}"/>
+    </inertial>
+  </xacro:macro>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 ${wheel_radius + chassis_height * 0.5}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+      </geometry>
+      <material name="dark_gray">
+        <color rgba="0.2 0.2 0.2 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${wheel_radius + chassis_height * 0.5}" rpy="0 0 0"/>
+      <geometry>
+        <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+      </geometry>
+    </collision>
+    <xacro:default_inertial mass="40.0" ixx="1.0" iyy="1.0" izz="1.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </link>
+
+  <!-- Wheel macro -->
+  <xacro:macro name="wheel" params="name x y">
+    <link name="${name}">
+      <visual>
+        <origin xyz="${x} ${y} ${wheel_radius}" rpy="0 1.5708 0"/>
+        <geometry>
+          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+        </geometry>
+        <material name="black">
+          <color rgba="0.05 0.05 0.05 1.0"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="${x} ${y} ${wheel_radius}" rpy="0 1.5708 0"/>
+        <geometry>
+          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+        </geometry>
+      </collision>
+      <xacro:default_inertial mass="5.0" ixx="0.1" iyy="0.1" izz="0.1" ixy="0.0" iyz="0.0" ixz="0.0"/>
+    </link>
+    <joint name="${name}_joint" type="continuous">
+      <parent link="base_link"/>
+      <child link="${name}"/>
+      <origin xyz="${x} ${y} ${wheel_radius}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- Wheel positions: front/back along the 2.0 m length, centered in width.
+       Using a small margin (0.2 m) from the ends. -->
+  <xacro:property name="wheel_offset_x" value="${chassis_length * 0.5 - 0.2}"/>
+  <xacro:property name="wheel_offset_y" value="${chassis_width * 0.5}"/>
+
+  <xacro:wheel name="front_left_wheel" x="${wheel_offset_x}" y="${wheel_offset_y}"/>
+  <xacro:wheel name="front_right_wheel" x="${wheel_offset_x}" y="-${wheel_offset_y}"/>
+  <xacro:wheel name="rear_left_wheel" x="-${wheel_offset_x}" y="${wheel_offset_y}"/>
+  <xacro:wheel name="rear_right_wheel" x="-${wheel_offset_x}" y="-${wheel_offset_y}"/>
+
+  <!-- Camera link: mounted at the front, 0.5 m above chassis top -->
+  <link name="camera_link">
+    <visual>
+      <origin xyz="${chassis_length * 0.5 - 0.05} 0 ${wheel_radius + chassis_height + 0.5}" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.08 0.08 0.05"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.1 0.3 0.8 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="${chassis_length * 0.5 - 0.05} 0 ${wheel_radius + chassis_height + 0.5}" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.08 0.08 0.05"/>
+      </geometry>
+    </collision>
+    <xacro:default_inertial mass="0.5" ixx="0.01" iyy="0.01" izz="0.01" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </link>
+
+  <joint name="camera_mount_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="${chassis_length * 0.5 - 0.05} 0 ${wheel_radius + chassis_height + 0.5}" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ros2_control: generic system placeholder. Replace plugin with a hardware interface that talks to Revo SDK if desired. -->
+  <ros2_control name="revo_ugv_control" type="system">
+    <hardware>
+      <!-- 使用 fake_components/GenericSystem 以便在无硬件接口时仍可加载控制器 -->
+      <plugin>fake_components/GenericSystem</plugin>
+      <param name="command_interfaces">["velocity"]</param>
+      <param name="state_interfaces">["position", "velocity"]</param>
+    </hardware>
+    <joint name="front_left_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="front_right_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="rear_left_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="rear_right_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <!-- Transmissions to satisfy diff_drive_controller -->
+  <transmission name="front_left_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="front_left_wheel_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="front_left_wheel_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="front_right_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="front_right_wheel_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="front_right_wheel_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="rear_left_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rear_left_wheel_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rear_left_wheel_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="rear_right_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="rear_right_wheel_joint">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="rear_right_wheel_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+</robot>

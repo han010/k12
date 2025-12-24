@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>revo_ugv_ros2</name>
+  <version>0.1.0</version>
+  <description>ROS 2 bridge for Revo UGV SDK (UDP-based chassis control).</description>
+  <maintainer email="support@xarevo.com">Revo Team</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>xacro</depend>
+  <depend>ros2_control</depend>
+  <depend>controller_manager</depend>
+  <depend>ros2_controllers</depend>
+  <depend>diff_drive_controller</depend>
+  <depend>joint_state_broadcaster</depend>
+  <depend>depthimage_to_laserscan</depend>
+  <depend>slam_toolbox</depend>
+
+  <exec_depend>python3</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
